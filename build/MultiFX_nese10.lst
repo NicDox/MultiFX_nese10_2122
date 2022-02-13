@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -16,19 +16,101 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   13              		.text
   14              	.Ltext0:
   15              		.cfi_sections	.debug_frame
-  16              		.section	.text._ZN5daisy9DaisySeedD2Ev,"axG",%progbits,_ZN5daisy9DaisySeedD5Ev,comdat
+  16              		.section	.text._ZN5daisy9ParameterD2Ev,"axG",%progbits,_ZN5daisy9ParameterD5Ev,comdat
   17              		.align	1
   18              		.p2align 2,,3
-  19              		.weak	_ZN5daisy9DaisySeedD2Ev
+  19              		.weak	_ZN5daisy9ParameterD2Ev
   20              		.arch armv7e-m
   21              		.syntax unified
   22              		.thumb
   23              		.thumb_func
   24              		.fpu fpv5-d16
-  26              	_ZN5daisy9DaisySeedD2Ev:
+  26              	_ZN5daisy9ParameterD2Ev:
   27              	.LVL0:
-  28              	.LFB2145:
-  29              		.file 1 "../../libdaisy//src/daisy_seed.h"
+  28              	.LFB1615:
+  29              		.file 1 "../../libdaisy//src/hid/parameter.h"
+   1:../../libdaisy//src/hid/parameter.h **** #pragma once
+   2:../../libdaisy//src/hid/parameter.h **** #include <stdint.h>
+   3:../../libdaisy//src/hid/parameter.h **** #include "hid/ctrl.h"
+   4:../../libdaisy//src/hid/parameter.h **** 
+   5:../../libdaisy//src/hid/parameter.h **** namespace daisy
+   6:../../libdaisy//src/hid/parameter.h **** {
+   7:../../libdaisy//src/hid/parameter.h **** /** @addtogroup controls
+   8:../../libdaisy//src/hid/parameter.h ****     @{
+   9:../../libdaisy//src/hid/parameter.h **** */
+  10:../../libdaisy//src/hid/parameter.h **** 
+  11:../../libdaisy//src/hid/parameter.h **** /**      Simple parameter mapping tool that takes a 0-1 input from an hid_ctrl. */
+  12:../../libdaisy//src/hid/parameter.h **** class Parameter
+  13:../../libdaisy//src/hid/parameter.h **** {
+  14:../../libdaisy//src/hid/parameter.h ****   public:
+  15:../../libdaisy//src/hid/parameter.h ****     /** Curves are applied to the output signal */
+  16:../../libdaisy//src/hid/parameter.h ****     enum Curve
+  17:../../libdaisy//src/hid/parameter.h ****     {
+  18:../../libdaisy//src/hid/parameter.h ****         LINEAR,      /**< Linear curve */
+  19:../../libdaisy//src/hid/parameter.h ****         EXPONENTIAL, /**< Exponential curve */
+  20:../../libdaisy//src/hid/parameter.h ****         LOGARITHMIC, /**<  Logarithmic curve */
+  21:../../libdaisy//src/hid/parameter.h ****         CUBE,        /**< Cubic curve */
+  22:../../libdaisy//src/hid/parameter.h ****         LAST,        /**< Final enum element. */
+  23:../../libdaisy//src/hid/parameter.h ****     };
+  24:../../libdaisy//src/hid/parameter.h ****     /** Constructor */
+  25:../../libdaisy//src/hid/parameter.h ****     Parameter() {}
+  26:../../libdaisy//src/hid/parameter.h ****     /** Destructor */
+  27:../../libdaisy//src/hid/parameter.h ****     ~Parameter() {}
+  30              		.loc 1 27 5 view -0
+  31              		.cfi_startproc
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 2
+
+
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  35              	.LBB125:
+  36              	.LBI125:
+  37              		.file 2 "../../libdaisy//src/hid/ctrl.h"
+   1:../../libdaisy//src/hid/ctrl.h **** #pragma once
+   2:../../libdaisy//src/hid/ctrl.h **** #ifndef DSY_KNOB_H
+   3:../../libdaisy//src/hid/ctrl.h **** #define DSY_KNOB_H /**< & */
+   4:../../libdaisy//src/hid/ctrl.h **** #include <stdint.h>
+   5:../../libdaisy//src/hid/ctrl.h **** 
+   6:../../libdaisy//src/hid/ctrl.h **** #ifdef __cplusplus
+   7:../../libdaisy//src/hid/ctrl.h **** namespace daisy
+   8:../../libdaisy//src/hid/ctrl.h **** {
+   9:../../libdaisy//src/hid/ctrl.h **** /**
+  10:../../libdaisy//src/hid/ctrl.h ****     @brief Hardware Interface for control inputs \n 
+  11:../../libdaisy//src/hid/ctrl.h ****     Primarily designed for ADC input controls such as \n 
+  12:../../libdaisy//src/hid/ctrl.h ****     potentiometers, and control voltage. \n 
+  13:../../libdaisy//src/hid/ctrl.h ****     @author Stephen Hensley
+  14:../../libdaisy//src/hid/ctrl.h ****     @date November 2019
+  15:../../libdaisy//src/hid/ctrl.h ****     @ingroup controls
+  16:../../libdaisy//src/hid/ctrl.h **** */
+  17:../../libdaisy//src/hid/ctrl.h **** class AnalogControl
+  18:../../libdaisy//src/hid/ctrl.h **** {
+  19:../../libdaisy//src/hid/ctrl.h ****   public:
+  20:../../libdaisy//src/hid/ctrl.h ****     /** Constructor */
+  21:../../libdaisy//src/hid/ctrl.h ****     AnalogControl() {}
+  22:../../libdaisy//src/hid/ctrl.h ****     /** destructor */
+  23:../../libdaisy//src/hid/ctrl.h ****     ~AnalogControl() {}
+  38              		.loc 2 23 5 view .LVU1
+  39              		.loc 2 23 5 is_stmt 0 view .LVU2
+  40              	.LBE125:
+  41              		.loc 1 27 19 view .LVU3
+  42 0000 7047     		bx	lr
+  43              		.cfi_endproc
+  44              	.LFE1615:
+  46              		.weak	_ZN5daisy9ParameterD1Ev
+  47              		.thumb_set _ZN5daisy9ParameterD1Ev,_ZN5daisy9ParameterD2Ev
+  48 0002 00BF     		.section	.text._ZN5daisy9DaisySeedD2Ev,"axG",%progbits,_ZN5daisy9DaisySeedD5Ev,comdat
+  49              		.align	1
+  50              		.p2align 2,,3
+  51              		.weak	_ZN5daisy9DaisySeedD2Ev
+  52              		.syntax unified
+  53              		.thumb
+  54              		.thumb_func
+  55              		.fpu fpv5-d16
+  57              	_ZN5daisy9DaisySeedD2Ev:
+  58              	.LVL1:
+  59              	.LFB2145:
+  60              		.file 3 "../../libdaisy//src/daisy_seed.h"
    1:../../libdaisy//src/daisy_seed.h **** #pragma once
    2:../../libdaisy//src/daisy_seed.h **** #ifndef DSY_SEED_H
    3:../../libdaisy//src/daisy_seed.h **** #define DSY_SEED_H
@@ -36,6 +118,9 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
    5:../../libdaisy//src/daisy_seed.h **** #include "daisy.h"
    6:../../libdaisy//src/daisy_seed.h **** 
    7:../../libdaisy//src/daisy_seed.h **** //Uncomment this out if you're still using the rev2 hardware
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 3
+
+
    8:../../libdaisy//src/daisy_seed.h **** //#define SEED_REV2
    9:../../libdaisy//src/daisy_seed.h **** 
   10:../../libdaisy//src/daisy_seed.h **** namespace daisy
@@ -51,17 +136,14 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   20:../../libdaisy//src/daisy_seed.h ****   public:
   21:../../libdaisy//src/daisy_seed.h ****     DaisySeed() {}
   22:../../libdaisy//src/daisy_seed.h ****     ~DaisySeed() {}
-  30              		.loc 1 22 5 view -0
-  31              		.cfi_startproc
-  32              		@ args = 0, pretend = 0, frame = 0
-  33              		@ frame_needed = 0, uses_anonymous_args = 0
-  34              		@ link register save eliminated.
-  35              	.LBB62:
-  36              	.LBI62:
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 2
-
-
-  37              		.file 2 "../../libdaisy//src/sys/system.h"
+  61              		.loc 3 22 5 is_stmt 1 view -0
+  62              		.cfi_startproc
+  63              		@ args = 0, pretend = 0, frame = 0
+  64              		@ frame_needed = 0, uses_anonymous_args = 0
+  65              		@ link register save eliminated.
+  66              	.LBB126:
+  67              	.LBI126:
+  68              		.file 4 "../../libdaisy//src/sys/system.h"
    1:../../libdaisy//src/sys/system.h **** #ifndef DSY_SYSTEM_H
    2:../../libdaisy//src/sys/system.h **** #define DSY_SYSTEM_H
    3:../../libdaisy//src/sys/system.h **** 
@@ -96,6 +178,9 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   32:../../libdaisy//src/sys/system.h ****          ** CPU Freq set to 400MHz
   33:../../libdaisy//src/sys/system.h ****          ** Cache Enabled 
   34:../../libdaisy//src/sys/system.h ****          ** */
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 4
+
+
   35:../../libdaisy//src/sys/system.h ****         void Defaults()
   36:../../libdaisy//src/sys/system.h ****         {
   37:../../libdaisy//src/sys/system.h ****             cpu_freq    = SysClkFreq::FREQ_400MHZ;
@@ -118,9 +203,6 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   54:../../libdaisy//src/sys/system.h **** 
   55:../../libdaisy//src/sys/system.h ****         SysClkFreq cpu_freq;
   56:../../libdaisy//src/sys/system.h ****         bool       use_dcache;
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 3
-
-
   57:../../libdaisy//src/sys/system.h ****         bool       use_icache;
   58:../../libdaisy//src/sys/system.h ****         bool       skip_clocks;
   59:../../libdaisy//src/sys/system.h ****     };
@@ -143,12 +225,12 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   76:../../libdaisy//src/sys/system.h **** 
   77:../../libdaisy//src/sys/system.h ****     System() {}
   78:../../libdaisy//src/sys/system.h ****     ~System() {}
-  38              		.loc 2 78 5 view .LVU1
-  39              		.loc 2 78 5 is_stmt 0 view .LVU2
-  40              	.LBE62:
-  41              	.LBB63:
-  42              	.LBI63:
-  43              		.file 3 "../../libdaisy//src/hid/usb.h"
+  69              		.loc 4 78 5 view .LVU5
+  70              		.loc 4 78 5 is_stmt 0 view .LVU6
+  71              	.LBE126:
+  72              	.LBB127:
+  73              	.LBI127:
+  74              		.file 5 "../../libdaisy//src/hid/usb.h"
    1:../../libdaisy//src/hid/usb.h **** #pragma once
    2:../../libdaisy//src/hid/usb.h **** #ifndef DSY_HID_USB_H
    3:../../libdaisy//src/hid/usb.h **** #define DSY_HID_USB_H
@@ -156,6 +238,9 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
    5:../../libdaisy//src/hid/usb.h **** #include <stdlib.h>
    6:../../libdaisy//src/hid/usb.h **** 
    7:../../libdaisy//src/hid/usb.h **** namespace daisy
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 5
+
+
    8:../../libdaisy//src/hid/usb.h **** /** @addtogroup externals
    9:../../libdaisy//src/hid/usb.h ****     @{
   10:../../libdaisy//src/hid/usb.h **** */
@@ -178,9 +263,6 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   27:../../libdaisy//src/hid/usb.h **** 
   28:../../libdaisy//src/hid/usb.h ****     /** Specified which of the two USB Peripherals to initialize. */
   29:../../libdaisy//src/hid/usb.h ****     enum UsbPeriph
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 4
-
-
   30:../../libdaisy//src/hid/usb.h ****     {
   31:../../libdaisy//src/hid/usb.h ****         FS_INTERNAL, /**< Internal pin */
   32:../../libdaisy//src/hid/usb.h ****         FS_EXTERNAL, /**< FS External D+ pin is Pin 38 (GPIO32). FS External D- pin is Pin 37 (GPIO
@@ -194,12 +276,12 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   40:../../libdaisy//src/hid/usb.h ****     UsbHandle() {}
   41:../../libdaisy//src/hid/usb.h **** 
   42:../../libdaisy//src/hid/usb.h ****     ~UsbHandle() {}
-  44              		.loc 3 42 5 is_stmt 1 view .LVU3
-  45              		.loc 3 42 5 is_stmt 0 view .LVU4
-  46              	.LBE63:
-  47              	.LBB64:
-  48              	.LBI64:
-  49              		.file 4 "../../libdaisy//src/per/adc.h"
+  75              		.loc 5 42 5 is_stmt 1 view .LVU7
+  76              		.loc 5 42 5 is_stmt 0 view .LVU8
+  77              	.LBE127:
+  78              	.LBB128:
+  79              	.LBI128:
+  80              		.file 6 "../../libdaisy//src/per/adc.h"
    1:../../libdaisy//src/per/adc.h **** #pragma once
    2:../../libdaisy//src/per/adc.h **** #ifndef DSY_ADC_H
    3:../../libdaisy//src/per/adc.h **** #define DSY_ADC_H /**< Macro */
@@ -216,6 +298,9 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   14:../../libdaisy//src/per/adc.h ****     @{
   15:../../libdaisy//src/per/adc.h **** */
   16:../../libdaisy//src/per/adc.h **** 
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 6
+
+
   17:../../libdaisy//src/per/adc.h **** /* While there may not be many configuration options here,
   18:../../libdaisy//src/per/adc.h **** using a struct like this allows us to add more configuration
   19:../../libdaisy//src/per/adc.h **** later without breaking existing functionality.
@@ -238,9 +323,6 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   36:../../libdaisy//src/per/adc.h ****      */
   37:../../libdaisy//src/per/adc.h ****     void InitSingle(dsy_gpio_pin pin);
   38:../../libdaisy//src/per/adc.h **** 
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 5
-
-
   39:../../libdaisy//src/per/adc.h ****     /** 
   40:../../libdaisy//src/per/adc.h ****     Initializes a single ADC pin as a Multiplexed ADC.
   41:../../libdaisy//src/per/adc.h ****     Requires a CD405X Multiplexer connected to the pin.
@@ -276,6 +358,9 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   71:../../libdaisy//src/per/adc.h ****         OVS_NONE, /**< & */
   72:../../libdaisy//src/per/adc.h ****         OVS_4,    /**< & */
   73:../../libdaisy//src/per/adc.h ****         OVS_8,    /**< & */
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 7
+
+
   74:../../libdaisy//src/per/adc.h ****         OVS_16,   /**< & */
   75:../../libdaisy//src/per/adc.h ****         OVS_32,   /**< & */
   76:../../libdaisy//src/per/adc.h ****         OVS_64,   /**< & */
@@ -288,19 +373,16 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   83:../../libdaisy//src/per/adc.h **** 
   84:../../libdaisy//src/per/adc.h ****     AdcHandle() {}
   85:../../libdaisy//src/per/adc.h ****     ~AdcHandle() {}
-  50              		.loc 4 85 5 is_stmt 1 view .LVU5
-  51              		.loc 4 85 5 is_stmt 0 view .LVU6
-  52              	.LBE64:
-  53              	.LBB65:
-  54              	.LBI65:
-  55              		.file 5 "../../libdaisy//src/hid/audio.h"
+  81              		.loc 6 85 5 is_stmt 1 view .LVU9
+  82              		.loc 6 85 5 is_stmt 0 view .LVU10
+  83              	.LBE128:
+  84              	.LBB129:
+  85              	.LBI129:
+  86              		.file 7 "../../libdaisy//src/hid/audio.h"
    1:../../libdaisy//src/hid/audio.h **** #ifndef DSY_AUDIO_H
    2:../../libdaisy//src/hid/audio.h **** #define DSY_AUDIO_H /**< & */
    3:../../libdaisy//src/hid/audio.h **** 
    4:../../libdaisy//src/hid/audio.h **** #include "per/sai.h"
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 6
-
-
    5:../../libdaisy//src/hid/audio.h **** 
    6:../../libdaisy//src/hid/audio.h **** namespace daisy
    7:../../libdaisy//src/hid/audio.h **** {
@@ -336,6 +418,9 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   37:../../libdaisy//src/hid/audio.h ****     /** Type for a Non-Interleaving audio callback 
   38:../../libdaisy//src/hid/audio.h ****    * Non-Interleaving audio callbacks in daisy will be of this type
   39:../../libdaisy//src/hid/audio.h ****   */
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 8
+
+
   40:../../libdaisy//src/hid/audio.h ****     typedef void (*AudioCallback)(InputBuffer  in,
   41:../../libdaisy//src/hid/audio.h ****                                   OutputBuffer out,
   42:../../libdaisy//src/hid/audio.h ****                                   size_t       size);
@@ -358,206 +443,465 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   59:../../libdaisy//src/hid/audio.h ****                                               InterleavingOutputBuffer out,
   60:../../libdaisy//src/hid/audio.h ****                                               size_t                   size);
   61:../../libdaisy//src/hid/audio.h **** 
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 7
-
-
   62:../../libdaisy//src/hid/audio.h ****     AudioHandle() : pimpl_(nullptr) {}
   63:../../libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
-  56              		.loc 5 63 5 is_stmt 1 view .LVU7
-  57              		.loc 5 63 5 is_stmt 0 view .LVU8
-  58              	.LBE65:
-  59              		.loc 1 22 19 view .LVU9
-  60 0000 7047     		bx	lr
-  61              		.cfi_endproc
-  62              	.LFE2145:
-  64              		.weak	_ZN5daisy9DaisySeedD1Ev
-  65              		.thumb_set _ZN5daisy9DaisySeedD1Ev,_ZN5daisy9DaisySeedD2Ev
-  66 0002 00BF     		.section	.text._Z13AudioCallbackPKPKfPPfj,"ax",%progbits
-  67              		.align	1
-  68              		.p2align 2,,3
-  69              		.global	_Z13AudioCallbackPKPKfPPfj
-  70              		.syntax unified
-  71              		.thumb
-  72              		.thumb_func
-  73              		.fpu fpv5-d16
-  75              	_Z13AudioCallbackPKPKfPPfj:
-  76              	.LVL1:
-  77              	.LFB4396:
-  78              		.file 6 "MultiFX_nese10.cpp"
+  87              		.loc 7 63 5 is_stmt 1 view .LVU11
+  88              		.loc 7 63 5 is_stmt 0 view .LVU12
+  89              	.LBE129:
+  90              		.loc 3 22 19 view .LVU13
+  91 0000 7047     		bx	lr
+  92              		.cfi_endproc
+  93              	.LFE2145:
+  95              		.weak	_ZN5daisy9DaisySeedD1Ev
+  96              		.thumb_set _ZN5daisy9DaisySeedD1Ev,_ZN5daisy9DaisySeedD2Ev
+  97 0002 00BF     		.section	.text._ZN7daisysp6PhaserD2Ev,"axG",%progbits,_ZN7daisysp6PhaserD5Ev,comdat
+  98              		.align	1
+  99              		.p2align 2,,3
+ 100              		.weak	_ZN7daisysp6PhaserD2Ev
+ 101              		.syntax unified
+ 102              		.thumb
+ 103              		.thumb_func
+ 104              		.fpu fpv5-d16
+ 106              	_ZN7daisysp6PhaserD2Ev:
+ 107              	.LVL2:
+ 108              	.LFB4052:
+ 109              		.file 8 "../../DaisySP//Source/Effects/phaser.h"
+   1:../../DaisySP//Source/Effects/phaser.h **** #pragma once
+   2:../../DaisySP//Source/Effects/phaser.h **** #ifndef DSY_PHASER_H
+   3:../../DaisySP//Source/Effects/phaser.h **** #define DSY_PHASER_H
+   4:../../DaisySP//Source/Effects/phaser.h **** #ifdef __cplusplus
+   5:../../DaisySP//Source/Effects/phaser.h **** 
+   6:../../DaisySP//Source/Effects/phaser.h **** #include <stdint.h>
+   7:../../DaisySP//Source/Effects/phaser.h **** #include "Utility/delayline.h"
+   8:../../DaisySP//Source/Effects/phaser.h **** 
+   9:../../DaisySP//Source/Effects/phaser.h **** /** @file phaser.h */
+  10:../../DaisySP//Source/Effects/phaser.h **** 
+  11:../../DaisySP//Source/Effects/phaser.h **** namespace daisysp
+  12:../../DaisySP//Source/Effects/phaser.h **** {
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 9
+
+
+  13:../../DaisySP//Source/Effects/phaser.h **** /**  
+  14:../../DaisySP//Source/Effects/phaser.h ****     @brief Single Phaser engine. Used in Phaser.
+  15:../../DaisySP//Source/Effects/phaser.h ****     @author Ben Sergentanis
+  16:../../DaisySP//Source/Effects/phaser.h **** */
+  17:../../DaisySP//Source/Effects/phaser.h **** class PhaserEngine
+  18:../../DaisySP//Source/Effects/phaser.h **** {
+  19:../../DaisySP//Source/Effects/phaser.h ****   public:
+  20:../../DaisySP//Source/Effects/phaser.h ****     PhaserEngine() {}
+  21:../../DaisySP//Source/Effects/phaser.h ****     ~PhaserEngine() {}
+  22:../../DaisySP//Source/Effects/phaser.h **** 
+  23:../../DaisySP//Source/Effects/phaser.h ****     /** Initialize the module
+  24:../../DaisySP//Source/Effects/phaser.h ****         \param sample_rate Audio engine sample rate.
+  25:../../DaisySP//Source/Effects/phaser.h ****     */
+  26:../../DaisySP//Source/Effects/phaser.h ****     void Init(float sample_rate);
+  27:../../DaisySP//Source/Effects/phaser.h **** 
+  28:../../DaisySP//Source/Effects/phaser.h ****     /** Get the next sample
+  29:../../DaisySP//Source/Effects/phaser.h ****         \param in Sample to process
+  30:../../DaisySP//Source/Effects/phaser.h ****     */
+  31:../../DaisySP//Source/Effects/phaser.h ****     float Process(float in);
+  32:../../DaisySP//Source/Effects/phaser.h **** 
+  33:../../DaisySP//Source/Effects/phaser.h ****     /** How much to modulate the allpass filter by.
+  34:../../DaisySP//Source/Effects/phaser.h ****         \param depth Works 0-1.
+  35:../../DaisySP//Source/Effects/phaser.h ****     */
+  36:../../DaisySP//Source/Effects/phaser.h ****     void SetLfoDepth(float depth);
+  37:../../DaisySP//Source/Effects/phaser.h **** 
+  38:../../DaisySP//Source/Effects/phaser.h ****     /** Set lfo frequency.
+  39:../../DaisySP//Source/Effects/phaser.h ****         \param lfo_freq Frequency in Hz
+  40:../../DaisySP//Source/Effects/phaser.h ****     */
+  41:../../DaisySP//Source/Effects/phaser.h ****     void SetLfoFreq(float lfo_freq);
+  42:../../DaisySP//Source/Effects/phaser.h **** 
+  43:../../DaisySP//Source/Effects/phaser.h ****     /** Set the allpass frequency
+  44:../../DaisySP//Source/Effects/phaser.h ****         \param ap_freq Frequency in Hz.
+  45:../../DaisySP//Source/Effects/phaser.h ****     */
+  46:../../DaisySP//Source/Effects/phaser.h ****     void SetFreq(float ap_freq);
+  47:../../DaisySP//Source/Effects/phaser.h **** 
+  48:../../DaisySP//Source/Effects/phaser.h ****     /** Set the feedback amount.
+  49:../../DaisySP//Source/Effects/phaser.h ****         \param feedback Amount from 0-1.
+  50:../../DaisySP//Source/Effects/phaser.h ****     */
+  51:../../DaisySP//Source/Effects/phaser.h ****     void SetFeedback(float feedback);
+  52:../../DaisySP//Source/Effects/phaser.h **** 
+  53:../../DaisySP//Source/Effects/phaser.h ****   private:
+  54:../../DaisySP//Source/Effects/phaser.h ****     float                    sample_rate_;
+  55:../../DaisySP//Source/Effects/phaser.h ****     static constexpr int32_t kDelayLength
+  56:../../DaisySP//Source/Effects/phaser.h ****         = 2400; // 50 ms at 48kHz = .05 * 48000
+  57:../../DaisySP//Source/Effects/phaser.h **** 
+  58:../../DaisySP//Source/Effects/phaser.h ****     //triangle lfo
+  59:../../DaisySP//Source/Effects/phaser.h ****     float lfo_phase_;
+  60:../../DaisySP//Source/Effects/phaser.h ****     float lfo_freq_;
+  61:../../DaisySP//Source/Effects/phaser.h ****     float lfo_amp_;
+  62:../../DaisySP//Source/Effects/phaser.h **** 
+  63:../../DaisySP//Source/Effects/phaser.h ****     float os_;
+  64:../../DaisySP//Source/Effects/phaser.h **** 
+  65:../../DaisySP//Source/Effects/phaser.h ****     float feedback_;
+  66:../../DaisySP//Source/Effects/phaser.h ****     float ap_freq_;
+  67:../../DaisySP//Source/Effects/phaser.h **** 
+  68:../../DaisySP//Source/Effects/phaser.h ****     float deltime_;
+  69:../../DaisySP//Source/Effects/phaser.h ****     float last_sample_;
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 10
+
+
+  70:../../DaisySP//Source/Effects/phaser.h **** 
+  71:../../DaisySP//Source/Effects/phaser.h ****     DelayLine<float, kDelayLength> del_;
+  72:../../DaisySP//Source/Effects/phaser.h **** 
+  73:../../DaisySP//Source/Effects/phaser.h ****     float ProcessLfo();
+  74:../../DaisySP//Source/Effects/phaser.h **** };
+  75:../../DaisySP//Source/Effects/phaser.h **** 
+  76:../../DaisySP//Source/Effects/phaser.h **** //wraps up all of the phaser engines
+  77:../../DaisySP//Source/Effects/phaser.h **** /**  
+  78:../../DaisySP//Source/Effects/phaser.h ****     @brief Phaser Effect.
+  79:../../DaisySP//Source/Effects/phaser.h ****     @author Ben Sergentanis
+  80:../../DaisySP//Source/Effects/phaser.h ****     @date Jan 2021
+  81:../../DaisySP//Source/Effects/phaser.h **** */
+  82:../../DaisySP//Source/Effects/phaser.h **** class Phaser
+  83:../../DaisySP//Source/Effects/phaser.h **** {
+  84:../../DaisySP//Source/Effects/phaser.h ****   public:
+  85:../../DaisySP//Source/Effects/phaser.h ****     Phaser() {}
+  86:../../DaisySP//Source/Effects/phaser.h ****     ~Phaser() {}
+ 110              		.loc 8 86 5 is_stmt 1 view -0
+ 111              		.cfi_startproc
+ 112              		@ args = 0, pretend = 0, frame = 0
+ 113              		@ frame_needed = 0, uses_anonymous_args = 0
+ 114              		@ link register save eliminated.
+ 115              		.loc 8 86 16 is_stmt 0 view .LVU15
+ 116 0000 7047     		bx	lr
+ 117              		.cfi_endproc
+ 118              	.LFE4052:
+ 120              		.weak	_ZN7daisysp6PhaserD1Ev
+ 121              		.thumb_set _ZN7daisysp6PhaserD1Ev,_ZN7daisysp6PhaserD2Ev
+ 122              		.section	.text._ZN7daisysp7TremoloD2Ev,"axG",%progbits,_ZN7daisysp7TremoloD5Ev,comdat
+ 123              		.align	1
+ 124              		.p2align 2,,3
+ 125              		.weak	_ZN7daisysp7TremoloD2Ev
+ 126              		.syntax unified
+ 127              		.thumb
+ 128              		.thumb_func
+ 129              		.fpu fpv5-d16
+ 131              	_ZN7daisysp7TremoloD2Ev:
+ 132              	.LVL3:
+ 133              	.LFB4078:
+ 134              		.file 9 "../../DaisySP//Source/Effects/tremolo.h"
+   1:../../DaisySP//Source/Effects/tremolo.h **** #pragma once
+   2:../../DaisySP//Source/Effects/tremolo.h **** #ifndef DSY_TREMOLO_H
+   3:../../DaisySP//Source/Effects/tremolo.h **** #define DSY_TREMOLO_H
+   4:../../DaisySP//Source/Effects/tremolo.h **** 
+   5:../../DaisySP//Source/Effects/tremolo.h **** #include <stdint.h>
+   6:../../DaisySP//Source/Effects/tremolo.h **** #ifdef __cplusplus
+   7:../../DaisySP//Source/Effects/tremolo.h **** 
+   8:../../DaisySP//Source/Effects/tremolo.h **** #include <math.h>
+   9:../../DaisySP//Source/Effects/tremolo.h **** #include "Synthesis/oscillator.h"
+  10:../../DaisySP//Source/Effects/tremolo.h **** 
+  11:../../DaisySP//Source/Effects/tremolo.h **** /** @file tremolo.h */
+  12:../../DaisySP//Source/Effects/tremolo.h **** 
+  13:../../DaisySP//Source/Effects/tremolo.h **** namespace daisysp
+  14:../../DaisySP//Source/Effects/tremolo.h **** {
+  15:../../DaisySP//Source/Effects/tremolo.h **** /**  
+  16:../../DaisySP//Source/Effects/tremolo.h ****     @brief Tremolo effect.
+  17:../../DaisySP//Source/Effects/tremolo.h ****     @author Ben Sergentanis
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 11
+
+
+  18:../../DaisySP//Source/Effects/tremolo.h ****     @date Jan 2021
+  19:../../DaisySP//Source/Effects/tremolo.h ****     Based on https://christianfloisand.wordpress.com/2012/04/18/coding-some-tremolo/ \n
+  20:../../DaisySP//Source/Effects/tremolo.h **** */
+  21:../../DaisySP//Source/Effects/tremolo.h **** class Tremolo
+  22:../../DaisySP//Source/Effects/tremolo.h **** {
+  23:../../DaisySP//Source/Effects/tremolo.h ****   public:
+  24:../../DaisySP//Source/Effects/tremolo.h ****     Tremolo() {}
+  25:../../DaisySP//Source/Effects/tremolo.h ****     ~Tremolo() {}
+ 135              		.loc 9 25 5 is_stmt 1 view -0
+ 136              		.cfi_startproc
+ 137              		@ args = 0, pretend = 0, frame = 0
+ 138              		@ frame_needed = 0, uses_anonymous_args = 0
+ 139              		@ link register save eliminated.
+ 140              	.LBB130:
+ 141              	.LBI130:
+ 142              		.file 10 "../../DaisySP//Source/Synthesis/oscillator.h"
+   1:../../DaisySP//Source/Synthesis/oscillator.h **** #pragma once
+   2:../../DaisySP//Source/Synthesis/oscillator.h **** #ifndef DSY_OSCILLATOR_H
+   3:../../DaisySP//Source/Synthesis/oscillator.h **** #define DSY_OSCILLATOR_H
+   4:../../DaisySP//Source/Synthesis/oscillator.h **** #include <stdint.h>
+   5:../../DaisySP//Source/Synthesis/oscillator.h **** #include "Utility/dsp.h"
+   6:../../DaisySP//Source/Synthesis/oscillator.h **** #ifdef __cplusplus
+   7:../../DaisySP//Source/Synthesis/oscillator.h **** 
+   8:../../DaisySP//Source/Synthesis/oscillator.h **** namespace daisysp
+   9:../../DaisySP//Source/Synthesis/oscillator.h **** {
+  10:../../DaisySP//Source/Synthesis/oscillator.h **** /** Synthesis of several waveforms, including polyBLEP bandlimited waveforms.
+  11:../../DaisySP//Source/Synthesis/oscillator.h **** */
+  12:../../DaisySP//Source/Synthesis/oscillator.h **** class Oscillator
+  13:../../DaisySP//Source/Synthesis/oscillator.h **** {
+  14:../../DaisySP//Source/Synthesis/oscillator.h ****   public:
+  15:../../DaisySP//Source/Synthesis/oscillator.h ****     Oscillator() {}
+  16:../../DaisySP//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
+ 143              		.loc 10 16 5 view .LVU17
+ 144              		.loc 10 16 5 is_stmt 0 view .LVU18
+ 145              	.LBE130:
+ 146              		.loc 9 25 17 view .LVU19
+ 147 0000 7047     		bx	lr
+ 148              		.cfi_endproc
+ 149              	.LFE4078:
+ 151              		.weak	_ZN7daisysp7TremoloD1Ev
+ 152              		.thumb_set _ZN7daisysp7TremoloD1Ev,_ZN7daisysp7TremoloD2Ev
+ 153 0002 00BF     		.section	.text._Z13AudioCallbackPKPKfPPfj,"ax",%progbits
+ 154              		.align	1
+ 155              		.p2align 2,,3
+ 156              		.global	_Z13AudioCallbackPKPKfPPfj
+ 157              		.syntax unified
+ 158              		.thumb
+ 159              		.thumb_func
+ 160              		.fpu fpv5-d16
+ 162              	_Z13AudioCallbackPKPKfPPfj:
+ 163              	.LVL4:
+ 164              	.LFB4396:
+ 165              		.file 11 "MultiFX_nese10.cpp"
    1:MultiFX_nese10.cpp **** #include "daisy_seed.h"
    2:MultiFX_nese10.cpp **** #include "daisysp.h"
    3:MultiFX_nese10.cpp **** 
-   4:MultiFX_nese10.cpp **** using namespace daisy;
-   5:MultiFX_nese10.cpp **** using namespace daisysp;
+   4:MultiFX_nese10.cpp **** // Set max delay time to 0.75 of samplerate.
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 12
+
+
+   5:MultiFX_nese10.cpp **** #define MAX_DELAY static_cast<size_t>(48000 * 2.5f)
    6:MultiFX_nese10.cpp **** 
-   7:MultiFX_nese10.cpp **** DaisySeed hw;
-   8:MultiFX_nese10.cpp **** 
-   9:MultiFX_nese10.cpp **** void AudioCallback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
-  10:MultiFX_nese10.cpp **** {
-  79              		.loc 6 10 1 is_stmt 1 view -0
-  80              		.cfi_startproc
-  81              		@ args = 0, pretend = 0, frame = 0
-  82              		@ frame_needed = 0, uses_anonymous_args = 0
-  83              		@ link register save eliminated.
-  11:MultiFX_nese10.cpp **** 	for (size_t i = 0; i < size; i++)
-  84              		.loc 6 11 2 view .LVU11
-  85              	.LBB66:
-  86              		.loc 6 11 23 view .LVU12
-  87 0000 9AB1     		cbz	r2, .L11
-  88 0002 0368     		ldr	r3, [r0]
-  89 0004 4068     		ldr	r0, [r0, #4]
-  90              	.LVL2:
-  91              		.loc 6 11 23 is_stmt 0 view .LVU13
-  92 0006 03EB820C 		add	ip, r3, r2, lsl #2
-  93              	.LBE66:
-  10:MultiFX_nese10.cpp **** 	for (size_t i = 0; i < size; i++)
-  94              		.loc 6 10 1 view .LVU14
-  95 000a 10B4     		push	{r4}
-  96              		.cfi_def_cfa_offset 4
-  97              		.cfi_offset 4, -4
-  98 000c 0C68     		ldr	r4, [r1]
-  99 000e 4968     		ldr	r1, [r1, #4]
- 100              	.LVL3:
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 8
-
-
- 101              	.L5:
- 102              	.LBB67:
-  12:MultiFX_nese10.cpp **** 	{
-  13:MultiFX_nese10.cpp **** 		out[0][i] = in[0][i];
- 103              		.loc 6 13 3 is_stmt 1 discriminator 2 view .LVU15
- 104              		.loc 6 13 22 is_stmt 0 discriminator 2 view .LVU16
- 105 0010 53F8042B 		ldr	r2, [r3], #4	@ float
- 106              		.loc 6 13 13 discriminator 2 view .LVU17
- 107 0014 44F8042B 		str	r2, [r4], #4	@ float
-  14:MultiFX_nese10.cpp **** 		out[1][i] = in[1][i];
- 108              		.loc 6 14 3 is_stmt 1 discriminator 2 view .LVU18
-  11:MultiFX_nese10.cpp **** 	{
- 109              		.loc 6 11 23 is_stmt 0 discriminator 2 view .LVU19
- 110 0018 6345     		cmp	r3, ip
- 111              		.loc 6 14 22 discriminator 2 view .LVU20
- 112 001a 50F8042B 		ldr	r2, [r0], #4	@ float
- 113              		.loc 6 14 13 discriminator 2 view .LVU21
- 114 001e 41F8042B 		str	r2, [r1], #4	@ float
-  11:MultiFX_nese10.cpp **** 	{
- 115              		.loc 6 11 2 is_stmt 1 discriminator 2 view .LVU22
-  11:MultiFX_nese10.cpp **** 	{
- 116              		.loc 6 11 23 discriminator 2 view .LVU23
- 117 0022 F5D1     		bne	.L5
- 118              	.LBE67:
-  15:MultiFX_nese10.cpp **** 	}
-  16:MultiFX_nese10.cpp **** }
- 119              		.loc 6 16 1 is_stmt 0 view .LVU24
- 120 0024 5DF8044B 		ldr	r4, [sp], #4
- 121              		.cfi_restore 4
- 122              		.cfi_def_cfa_offset 0
- 123 0028 7047     		bx	lr
- 124              	.LVL4:
- 125              	.L11:
- 126              		.loc 6 16 1 view .LVU25
- 127 002a 7047     		bx	lr
- 128              		.cfi_endproc
- 129              	.LFE4396:
- 131              		.section	.text.startup.main,"ax",%progbits
- 132              		.align	1
- 133              		.p2align 2,,3
- 134              		.global	main
- 135              		.syntax unified
- 136              		.thumb
- 137              		.thumb_func
- 138              		.fpu fpv5-d16
- 140              	main:
- 141              	.LFB4397:
+   7:MultiFX_nese10.cpp **** using namespace daisy;
+   8:MultiFX_nese10.cpp **** using namespace daisysp;
+   9:MultiFX_nese10.cpp **** 
+  10:MultiFX_nese10.cpp **** static DaisySeed hw;
+  11:MultiFX_nese10.cpp **** 
+  12:MultiFX_nese10.cpp **** static Phaser										phas;
+  13:MultiFX_nese10.cpp **** static DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS 	dell;
+  14:MultiFX_nese10.cpp **** static DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS 	delr;
+  15:MultiFX_nese10.cpp **** static Tremolo										trem;
+  16:MultiFX_nese10.cpp **** static Parameter deltime;
   17:MultiFX_nese10.cpp **** 
-  18:MultiFX_nese10.cpp **** int main(void)
-  19:MultiFX_nese10.cpp **** {
- 142              		.loc 6 19 1 is_stmt 1 view -0
- 143              		.cfi_startproc
- 144              		@ Volatile: function does not return.
- 145              		@ args = 0, pretend = 0, frame = 0
- 146              		@ frame_needed = 0, uses_anonymous_args = 0
-  20:MultiFX_nese10.cpp **** 	hw.Init();
- 147              		.loc 6 20 2 view .LVU27
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 9
+  18:MultiFX_nese10.cpp **** float currentDelay, feedback, delayTarget, cutoff, dryWet[4];
+  19:MultiFX_nese10.cpp **** bool effectOn[3];
+  20:MultiFX_nese10.cpp **** 
+  21:MultiFX_nese10.cpp **** enum FX_types {
+  22:MultiFX_nese10.cpp **** 	PHAS,
+  23:MultiFX_nese10.cpp **** 	DEL,
+  24:MultiFX_nese10.cpp **** 	TREM,
+  25:MultiFX_nese10.cpp **** 	// DRY,
+  26:MultiFX_nese10.cpp **** 	// ALL,
+  27:MultiFX_nese10.cpp **** };
+  28:MultiFX_nese10.cpp **** 
+  29:MultiFX_nese10.cpp **** FX_types which_FX;	//Here is stored the value of the actual effect
+  30:MultiFX_nese10.cpp **** 
+  31:MultiFX_nese10.cpp **** void AudioCallback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
+  32:MultiFX_nese10.cpp **** {
+ 166              		.loc 11 32 1 is_stmt 1 view -0
+ 167              		.cfi_startproc
+ 168              		@ args = 0, pretend = 0, frame = 0
+ 169              		@ frame_needed = 0, uses_anonymous_args = 0
+ 170              		@ link register save eliminated.
+  33:MultiFX_nese10.cpp **** 	for (size_t i = 0; i < size; i++)
+ 171              		.loc 11 33 2 view .LVU21
+ 172              	.LBB131:
+ 173              		.loc 11 33 23 view .LVU22
+ 174 0000 9AB1     		cbz	r2, .L14
+ 175 0002 0368     		ldr	r3, [r0]
+ 176 0004 4068     		ldr	r0, [r0, #4]
+ 177              	.LVL5:
+ 178              		.loc 11 33 23 is_stmt 0 view .LVU23
+ 179 0006 03EB820C 		add	ip, r3, r2, lsl #2
+ 180              	.LBE131:
+  32:MultiFX_nese10.cpp **** 	for (size_t i = 0; i < size; i++)
+ 181              		.loc 11 32 1 view .LVU24
+ 182 000a 10B4     		push	{r4}
+ 183              		.cfi_def_cfa_offset 4
+ 184              		.cfi_offset 4, -4
+ 185 000c 0C68     		ldr	r4, [r1]
+ 186 000e 4968     		ldr	r1, [r1, #4]
+ 187              	.LVL6:
+ 188              	.L8:
+ 189              	.LBB132:
+  34:MultiFX_nese10.cpp **** 	{
+  35:MultiFX_nese10.cpp **** 		out[0][i] = in[0][i];
+ 190              		.loc 11 35 3 is_stmt 1 discriminator 2 view .LVU25
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 13
 
 
-  19:MultiFX_nese10.cpp **** 	hw.Init();
- 148              		.loc 6 19 1 is_stmt 0 view .LVU28
- 149 0000 08B5     		push	{r3, lr}
- 150              		.cfi_def_cfa_offset 8
- 151              		.cfi_offset 3, -8
- 152              		.cfi_offset 14, -4
- 153              		.loc 6 20 9 view .LVU29
- 154 0002 0021     		movs	r1, #0
- 155 0004 0748     		ldr	r0, .L17
- 156 0006 FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
- 157              	.LVL5:
-  21:MultiFX_nese10.cpp **** 	hw.SetAudioBlockSize(4); // number of samples handled per callback
- 158              		.loc 6 21 2 is_stmt 1 view .LVU30
- 159              		.loc 6 21 22 is_stmt 0 view .LVU31
- 160 000a 0421     		movs	r1, #4
- 161 000c 0548     		ldr	r0, .L17
- 162 000e FFF7FEFF 		bl	_ZN5daisy9DaisySeed17SetAudioBlockSizeEj
- 163              	.LVL6:
-  22:MultiFX_nese10.cpp **** 	hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
- 164              		.loc 6 22 2 is_stmt 1 view .LVU32
- 165              		.loc 6 22 23 is_stmt 0 view .LVU33
- 166 0012 0321     		movs	r1, #3
- 167 0014 0348     		ldr	r0, .L17
- 168 0016 FFF7FEFF 		bl	_ZN5daisy9DaisySeed18SetAudioSampleRateENS_9SaiHandle6Config10SampleRateE
- 169              	.LVL7:
-  23:MultiFX_nese10.cpp **** 	hw.StartAudio(AudioCallback);
- 170              		.loc 6 23 2 is_stmt 1 view .LVU34
- 171              		.loc 6 23 15 is_stmt 0 view .LVU35
- 172 001a 0349     		ldr	r1, .L17+4
- 173 001c 0148     		ldr	r0, .L17
- 174 001e FFF7FEFF 		bl	_ZN5daisy9DaisySeed10StartAudioEPFvPKPKfPPfjE
- 175              	.LVL8:
- 176              	.L15:
-  24:MultiFX_nese10.cpp **** 	while(1) {}
- 177              		.loc 6 24 2 is_stmt 1 discriminator 1 view .LVU36
- 178              		.loc 6 24 2 discriminator 1 view .LVU37
- 179              		.loc 6 24 2 discriminator 1 view .LVU38
- 180              		.loc 6 24 2 discriminator 1 view .LVU39
- 181 0022 FEE7     		b	.L15
- 182              	.L18:
- 183              		.align	2
- 184              	.L17:
- 185 0024 00000000 		.word	.LANCHOR0
- 186 0028 00000000 		.word	_Z13AudioCallbackPKPKfPPfj
- 187              		.cfi_endproc
- 188              	.LFE4397:
- 190              		.section	.text.startup._GLOBAL__sub_I_hw,"ax",%progbits
- 191              		.align	1
- 192              		.p2align 2,,3
- 193              		.syntax unified
- 194              		.thumb
- 195              		.thumb_func
- 196              		.fpu fpv5-d16
- 198              	_GLOBAL__sub_I_hw:
- 199              	.LFB4957:
-  25:MultiFX_nese10.cpp **** }
- 200              		.loc 6 25 1 view -0
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 10
+ 191              		.loc 11 35 22 is_stmt 0 discriminator 2 view .LVU26
+ 192 0010 53F8042B 		ldr	r2, [r3], #4	@ float
+ 193              		.loc 11 35 13 discriminator 2 view .LVU27
+ 194 0014 44F8042B 		str	r2, [r4], #4	@ float
+  36:MultiFX_nese10.cpp **** 		out[1][i] = in[1][i];
+ 195              		.loc 11 36 3 is_stmt 1 discriminator 2 view .LVU28
+  33:MultiFX_nese10.cpp **** 	{
+ 196              		.loc 11 33 23 is_stmt 0 discriminator 2 view .LVU29
+ 197 0018 6345     		cmp	r3, ip
+ 198              		.loc 11 36 22 discriminator 2 view .LVU30
+ 199 001a 50F8042B 		ldr	r2, [r0], #4	@ float
+ 200              		.loc 11 36 13 discriminator 2 view .LVU31
+ 201 001e 41F8042B 		str	r2, [r1], #4	@ float
+  33:MultiFX_nese10.cpp **** 	{
+ 202              		.loc 11 33 2 is_stmt 1 discriminator 2 view .LVU32
+  33:MultiFX_nese10.cpp **** 	{
+ 203              		.loc 11 33 23 discriminator 2 view .LVU33
+ 204 0022 F5D1     		bne	.L8
+ 205              	.LBE132:
+  37:MultiFX_nese10.cpp **** 	}
+  38:MultiFX_nese10.cpp **** }
+ 206              		.loc 11 38 1 is_stmt 0 view .LVU34
+ 207 0024 5DF8044B 		ldr	r4, [sp], #4
+ 208              		.cfi_restore 4
+ 209              		.cfi_def_cfa_offset 0
+ 210 0028 7047     		bx	lr
+ 211              	.LVL7:
+ 212              	.L14:
+ 213              		.loc 11 38 1 view .LVU35
+ 214 002a 7047     		bx	lr
+ 215              		.cfi_endproc
+ 216              	.LFE4396:
+ 218              		.section	.text._ZN7daisysp9DelayLineIfLj120000EED2Ev,"axG",%progbits,_ZN7daisysp9DelayLineIfLj1200
+ 219              		.align	1
+ 220              		.p2align 2,,3
+ 221              		.weak	_ZN7daisysp9DelayLineIfLj120000EED2Ev
+ 222              		.syntax unified
+ 223              		.thumb
+ 224              		.thumb_func
+ 225              		.fpu fpv5-d16
+ 227              	_ZN7daisysp9DelayLineIfLj120000EED2Ev:
+ 228              	.LVL8:
+ 229              	.LFB4961:
+ 230              		.file 12 "../../DaisySP//Source/Utility/delayline.h"
+   1:../../DaisySP//Source/Utility/delayline.h **** #pragma once
+   2:../../DaisySP//Source/Utility/delayline.h **** #ifndef DSY_DELAY_H
+   3:../../DaisySP//Source/Utility/delayline.h **** #define DSY_DELAY_H
+   4:../../DaisySP//Source/Utility/delayline.h **** #include <stdlib.h>
+   5:../../DaisySP//Source/Utility/delayline.h **** #include <stdint.h>
+   6:../../DaisySP//Source/Utility/delayline.h **** namespace daisysp
+   7:../../DaisySP//Source/Utility/delayline.h **** {
+   8:../../DaisySP//Source/Utility/delayline.h **** /** Simple Delay line.
+   9:../../DaisySP//Source/Utility/delayline.h **** November 2019
+  10:../../DaisySP//Source/Utility/delayline.h **** 
+  11:../../DaisySP//Source/Utility/delayline.h **** Converted to Template December 2019
+  12:../../DaisySP//Source/Utility/delayline.h **** 
+  13:../../DaisySP//Source/Utility/delayline.h **** declaration example: (1 second of floats)
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 14
 
 
- 201              		.cfi_startproc
- 202              		@ args = 0, pretend = 0, frame = 0
- 203              		@ frame_needed = 0, uses_anonymous_args = 0
- 204              		@ link register save eliminated.
- 205              	.LBB86:
- 206              	.LBI86:
- 207              		.loc 6 25 1 view .LVU41
- 208              	.LVL9:
- 209              	.LBB87:
- 210              	.LBB88:
- 211              	.LBI88:
+  14:../../DaisySP//Source/Utility/delayline.h **** 
+  15:../../DaisySP//Source/Utility/delayline.h **** DelayLine<float, SAMPLE_RATE> del;
+  16:../../DaisySP//Source/Utility/delayline.h **** 
+  17:../../DaisySP//Source/Utility/delayline.h **** By: shensley
+  18:../../DaisySP//Source/Utility/delayline.h **** */
+  19:../../DaisySP//Source/Utility/delayline.h **** template <typename T, size_t max_size>
+  20:../../DaisySP//Source/Utility/delayline.h **** class DelayLine
+  21:../../DaisySP//Source/Utility/delayline.h **** {
+  22:../../DaisySP//Source/Utility/delayline.h ****   public:
+  23:../../DaisySP//Source/Utility/delayline.h ****     DelayLine() {}
+  24:../../DaisySP//Source/Utility/delayline.h ****     ~DelayLine() {}
+ 231              		.loc 12 24 5 is_stmt 1 view -0
+ 232              		.cfi_startproc
+ 233              		@ args = 0, pretend = 0, frame = 0
+ 234              		@ frame_needed = 0, uses_anonymous_args = 0
+ 235              		@ link register save eliminated.
+ 236              		.loc 12 24 19 is_stmt 0 view .LVU37
+ 237 0000 7047     		bx	lr
+ 238              		.cfi_endproc
+ 239              	.LFE4961:
+ 241              		.weak	_ZN7daisysp9DelayLineIfLj120000EED1Ev
+ 242              		.thumb_set _ZN7daisysp9DelayLineIfLj120000EED1Ev,_ZN7daisysp9DelayLineIfLj120000EED2Ev
+ 243              		.section	.text.startup.main,"ax",%progbits
+ 244              		.align	1
+ 245              		.p2align 2,,3
+ 246              		.global	main
+ 247              		.syntax unified
+ 248              		.thumb
+ 249              		.thumb_func
+ 250              		.fpu fpv5-d16
+ 252              	main:
+ 253              	.LFB4397:
+  39:MultiFX_nese10.cpp **** 
+  40:MultiFX_nese10.cpp **** int main(void)
+  41:MultiFX_nese10.cpp **** {
+ 254              		.loc 11 41 1 is_stmt 1 view -0
+ 255              		.cfi_startproc
+ 256              		@ Volatile: function does not return.
+ 257              		@ args = 0, pretend = 0, frame = 0
+ 258              		@ frame_needed = 0, uses_anonymous_args = 0
+  42:MultiFX_nese10.cpp **** 	hw.Init();
+ 259              		.loc 11 42 2 view .LVU39
+  41:MultiFX_nese10.cpp **** 	hw.Init();
+ 260              		.loc 11 41 1 is_stmt 0 view .LVU40
+ 261 0000 08B5     		push	{r3, lr}
+ 262              		.cfi_def_cfa_offset 8
+ 263              		.cfi_offset 3, -8
+ 264              		.cfi_offset 14, -4
+ 265              		.loc 11 42 9 view .LVU41
+ 266 0002 0021     		movs	r1, #0
+ 267 0004 0748     		ldr	r0, .L21
+ 268 0006 FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
+ 269              	.LVL9:
+  43:MultiFX_nese10.cpp **** 	hw.SetAudioBlockSize(4); // number of samples handled per callback
+ 270              		.loc 11 43 2 is_stmt 1 view .LVU42
+ 271              		.loc 11 43 22 is_stmt 0 view .LVU43
+ 272 000a 0421     		movs	r1, #4
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 15
+
+
+ 273 000c 0548     		ldr	r0, .L21
+ 274 000e FFF7FEFF 		bl	_ZN5daisy9DaisySeed17SetAudioBlockSizeEj
+ 275              	.LVL10:
+  44:MultiFX_nese10.cpp **** 	hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
+ 276              		.loc 11 44 2 is_stmt 1 view .LVU44
+ 277              		.loc 11 44 23 is_stmt 0 view .LVU45
+ 278 0012 0321     		movs	r1, #3
+ 279 0014 0348     		ldr	r0, .L21
+ 280 0016 FFF7FEFF 		bl	_ZN5daisy9DaisySeed18SetAudioSampleRateENS_9SaiHandle6Config10SampleRateE
+ 281              	.LVL11:
+  45:MultiFX_nese10.cpp **** 	hw.StartAudio(AudioCallback);
+ 282              		.loc 11 45 2 is_stmt 1 view .LVU46
+ 283              		.loc 11 45 15 is_stmt 0 view .LVU47
+ 284 001a 0349     		ldr	r1, .L21+4
+ 285 001c 0148     		ldr	r0, .L21
+ 286 001e FFF7FEFF 		bl	_ZN5daisy9DaisySeed10StartAudioEPFvPKPKfPPfjE
+ 287              	.LVL12:
+ 288              	.L19:
+  46:MultiFX_nese10.cpp **** 	while(1) {}
+ 289              		.loc 11 46 2 is_stmt 1 discriminator 1 view .LVU48
+ 290              		.loc 11 46 2 discriminator 1 view .LVU49
+ 291              		.loc 11 46 2 discriminator 1 view .LVU50
+ 292              		.loc 11 46 2 discriminator 1 view .LVU51
+ 293 0022 FEE7     		b	.L19
+ 294              	.L22:
+ 295              		.align	2
+ 296              	.L21:
+ 297 0024 00000000 		.word	.LANCHOR0
+ 298 0028 00000000 		.word	_Z13AudioCallbackPKPKfPPfj
+ 299              		.cfi_endproc
+ 300              	.LFE4397:
+ 302              		.section	.text.startup._GLOBAL__sub_I_currentDelay,"ax",%progbits
+ 303              		.align	1
+ 304              		.p2align 2,,3
+ 305              		.syntax unified
+ 306              		.thumb
+ 307              		.thumb_func
+ 308              		.fpu fpv5-d16
+ 310              	_GLOBAL__sub_I_currentDelay:
+ 311              	.LFB4963:
+  47:MultiFX_nese10.cpp **** }
+ 312              		.loc 11 47 1 view -0
+ 313              		.cfi_startproc
+ 314              		@ args = 0, pretend = 0, frame = 0
+ 315              		@ frame_needed = 0, uses_anonymous_args = 0
+ 316              	.LBB167:
+ 317              	.LBI167:
+ 318              		.loc 11 47 1 view .LVU53
+ 319              	.LVL13:
+ 320              	.LBB168:
+ 321              	.LBB169:
+ 322              	.LBI169:
   21:../../libdaisy//src/daisy_seed.h ****     ~DaisySeed() {}
- 212              		.loc 1 21 5 view .LVU42
- 213              	.LBB89:
- 214              	.LBB90:
- 215              	.LBI90:
- 216              		.file 7 "../../libdaisy//src/per/qspi.h"
+ 323              		.loc 3 21 5 view .LVU54
+ 324              	.LBB170:
+ 325              	.LBB171:
+ 326              	.LBI171:
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 16
+
+
+ 327              		.file 13 "../../libdaisy//src/per/qspi.h"
    1:../../libdaisy//src/per/qspi.h **** #ifndef DSY_QSPI
    2:../../libdaisy//src/per/qspi.h **** #define DSY_QSPI /**< Macro */
    3:../../libdaisy//src/per/qspi.h **** 
@@ -598,9 +942,6 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   38:../../libdaisy//src/per/qspi.h **** 
   39:../../libdaisy//src/per/qspi.h ****     /** Indicates the current status of the module. 
   40:../../libdaisy//src/per/qspi.h ****          *  Warnings are indicated by a leading W.
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 11
-
-
   41:../../libdaisy//src/per/qspi.h ****          *  Errors are indicated by a leading E and cause an immediate exit.
   42:../../libdaisy//src/per/qspi.h ****          * 
   43:../../libdaisy//src/per/qspi.h ****          *  \param GOOD - No errors have been reported.
@@ -617,6 +958,9 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   54:../../libdaisy//src/per/qspi.h ****     };
   55:../../libdaisy//src/per/qspi.h **** 
   56:../../libdaisy//src/per/qspi.h ****     /** Configuration structure for interfacing with QSPI Driver */
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 17
+
+
   57:../../libdaisy//src/per/qspi.h ****     struct Config
   58:../../libdaisy//src/per/qspi.h ****     {
   59:../../libdaisy//src/per/qspi.h ****         /** Flash Devices supported. (Both of these are more-or-less the same, just different sizes
@@ -658,9 +1002,6 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   95:../../libdaisy//src/per/qspi.h **** 
   96:../../libdaisy//src/per/qspi.h ****     /** 
   97:../../libdaisy//src/per/qspi.h ****         Initializes QSPI peripheral, and Resets, and prepares memory for access.
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 12
-
-
   98:../../libdaisy//src/per/qspi.h ****         \param config should be populated with the mode, device and pin_config before calling this 
   99:../../libdaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
  100:../../libdaisy//src/per/qspi.h ****         */
@@ -677,6 +1018,9 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
  111:../../libdaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
  112:../../libdaisy//src/per/qspi.h ****         */
  113:../../libdaisy//src/per/qspi.h ****     Result DeInit();
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 18
+
+
  114:../../libdaisy//src/per/qspi.h **** 
  115:../../libdaisy//src/per/qspi.h ****     /** 
  116:../../libdaisy//src/per/qspi.h ****         Writes a single page to to the specified address on the QSPI chip.
@@ -718,9 +1062,6 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
  152:../../libdaisy//src/per/qspi.h ****     /** Returns the current class status. Useful for debugging.
  153:../../libdaisy//src/per/qspi.h ****      *  \returns Status
  154:../../libdaisy//src/per/qspi.h ****      */
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 13
-
-
  155:../../libdaisy//src/per/qspi.h ****     Status GetStatus();
  156:../../libdaisy//src/per/qspi.h **** 
  157:../../libdaisy//src/per/qspi.h ****     /** Returns a pointer to the actual memory used 
@@ -733,61 +1074,73 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
  164:../../libdaisy//src/per/qspi.h ****     void* GetData(uint32_t offset = 0);
  165:../../libdaisy//src/per/qspi.h **** 
  166:../../libdaisy//src/per/qspi.h ****     QSPIHandle() : pimpl_(nullptr) {}
- 217              		.loc 7 166 5 view .LVU43
- 218              	.LBB91:
- 219              	.LBB92:
- 220              		.loc 7 166 34 is_stmt 0 view .LVU44
- 221 0000 0448     		ldr	r0, .L20
- 222 0002 0023     		movs	r3, #0
- 223              	.LBE92:
- 224              	.LBE91:
- 225              	.LBE90:
- 226              	.LBE89:
- 227              	.LBE88:
-   7:MultiFX_nese10.cpp **** 
- 228              		.loc 6 7 11 view .LVU45
- 229 0004 044A     		ldr	r2, .L20+4
- 230 0006 0549     		ldr	r1, .L20+8
- 231              	.LBB106:
- 232              	.LBB105:
- 233              	.LBB95:
- 234              	.LBB94:
- 235              	.LBB93:
- 236              		.loc 7 166 34 view .LVU46
- 237 0008 0360     		str	r3, [r0]
- 238              	.LVL10:
- 239              		.loc 7 166 34 view .LVU47
- 240              	.LBE93:
- 241              	.LBE94:
- 242              	.LBE95:
- 243              	.LBB96:
- 244              	.LBI96:
-  62:../../libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 245              		.loc 5 62 5 is_stmt 1 view .LVU48
- 246              	.LBB97:
- 247              	.LBB98:
-  62:../../libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 248              		.loc 5 62 35 is_stmt 0 view .LVU49
- 249 000a 4361     		str	r3, [r0, #20]
- 250              	.LVL11:
-  62:../../libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 251              		.loc 5 62 35 view .LVU50
- 252              	.LBE98:
- 253              	.LBE97:
- 254              	.LBE96:
- 255              	.LBB99:
- 256              	.LBI99:
-  84:../../libdaisy//src/per/adc.h ****     ~AdcHandle() {}
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 14
+ 328              		.loc 13 166 5 view .LVU55
+ 329              	.LBB172:
+ 330              	.LBB173:
+ 331              		.loc 13 166 34 is_stmt 0 view .LVU56
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 19
 
 
- 257              		.loc 4 84 5 is_stmt 1 view .LVU51
+ 332 0000 0023     		movs	r3, #0
+ 333 0002 1248     		ldr	r0, .L25
+ 334              	.LBE173:
+ 335              	.LBE172:
+ 336              	.LBE171:
+ 337              	.LBE170:
+ 338              	.LBE169:
+  10:MultiFX_nese10.cpp **** 
+ 339              		.loc 11 10 18 view .LVU57
+ 340 0004 124A     		ldr	r2, .L25+4
+ 341 0006 1349     		ldr	r1, .L25+8
+ 342              	.LBE168:
+ 343              	.LBE167:
+ 344              		.loc 11 47 1 view .LVU58
+ 345 0008 10B5     		push	{r4, lr}
+ 346              		.cfi_def_cfa_offset 8
+ 347              		.cfi_offset 4, -8
+ 348              		.cfi_offset 14, -4
+ 349              	.LBB200:
+ 350              	.LBB197:
+ 351              	.LBB187:
+ 352              	.LBB186:
+ 353              	.LBB176:
+ 354              	.LBB175:
+ 355              	.LBB174:
+ 356              		.loc 13 166 34 view .LVU59
+ 357 000a 0360     		str	r3, [r0]
+ 358              	.LVL14:
+ 359              		.loc 13 166 34 view .LVU60
+ 360              	.LBE174:
+ 361              	.LBE175:
+ 362              	.LBE176:
+ 363              	.LBB177:
+ 364              	.LBI177:
+  62:../../libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
+ 365              		.loc 7 62 5 is_stmt 1 view .LVU61
+ 366              	.LBB178:
+ 367              	.LBB179:
+  62:../../libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
+ 368              		.loc 7 62 35 is_stmt 0 view .LVU62
+ 369 000c 4361     		str	r3, [r0, #20]
+ 370              	.LVL15:
+  62:../../libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
+ 371              		.loc 7 62 35 view .LVU63
+ 372              	.LBE179:
+ 373              	.LBE178:
+ 374              	.LBE177:
+ 375              	.LBB180:
+ 376              	.LBI180:
   84:../../libdaisy//src/per/adc.h ****     ~AdcHandle() {}
- 258              		.loc 4 84 5 is_stmt 0 view .LVU52
- 259              	.LBE99:
- 260              	.LBB100:
- 261              	.LBI100:
- 262              		.file 8 "../../libdaisy//src/per/dac.h"
+ 377              		.loc 6 84 5 is_stmt 1 view .LVU64
+  84:../../libdaisy//src/per/adc.h ****     ~AdcHandle() {}
+ 378              		.loc 6 84 5 is_stmt 0 view .LVU65
+ 379              	.LBE180:
+ 380              	.LBB181:
+ 381              	.LBI181:
+ 382              		.file 14 "../../libdaisy//src/per/dac.h"
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 20
+
+
    1:../../libdaisy//src/per/dac.h **** #pragma once
    2:../../libdaisy//src/per/dac.h **** #ifndef DSY_DAC_H
    3:../../libdaisy//src/per/dac.h **** #define DSY_DAC_H
@@ -838,9 +1191,6 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   48:../../libdaisy//src/per/dac.h ****         DMA,
   49:../../libdaisy//src/per/dac.h ****     };
   50:../../libdaisy//src/per/dac.h **** 
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 15
-
-
   51:../../libdaisy//src/per/dac.h ****     /** Sets the number of bits per sample transmitted out of the DAC.
   52:../../libdaisy//src/per/dac.h ****      ** The output range will be: 0V - VDDA
   53:../../libdaisy//src/per/dac.h ****      ** The resolution will be roughly: bitdepth / (VDDA - 0V) 
@@ -848,6 +1198,9 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   55:../../libdaisy//src/per/dac.h ****     enum class BitDepth
   56:../../libdaisy//src/per/dac.h ****     {
   57:../../libdaisy//src/per/dac.h ****         BITS_8,
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 21
+
+
   58:../../libdaisy//src/per/dac.h ****         BITS_12
   59:../../libdaisy//src/per/dac.h ****     };
   60:../../libdaisy//src/per/dac.h **** 
@@ -874,131 +1227,369 @@ ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 1
   81:../../libdaisy//src/per/dac.h ****     };
   82:../../libdaisy//src/per/dac.h **** 
   83:../../libdaisy//src/per/dac.h ****     DacHandle() : pimpl_(nullptr) {}
- 263              		.loc 8 83 5 is_stmt 1 view .LVU53
- 264              	.LBB101:
- 265              	.LBB102:
- 266              		.loc 8 83 33 is_stmt 0 view .LVU54
- 267 000c 0362     		str	r3, [r0, #32]
- 268              	.LVL12:
- 269              		.loc 8 83 33 view .LVU55
- 270              	.LBE102:
- 271              	.LBE101:
- 272              	.LBE100:
- 273              	.LBB103:
- 274              	.LBI103:
+ 383              		.loc 14 83 5 is_stmt 1 view .LVU66
+ 384              	.LBB182:
+ 385              	.LBB183:
+ 386              		.loc 14 83 33 is_stmt 0 view .LVU67
+ 387 000e 0362     		str	r3, [r0, #32]
+ 388              	.LVL16:
+ 389              		.loc 14 83 33 view .LVU68
+ 390              	.LBE183:
+ 391              	.LBE182:
+ 392              	.LBE181:
+ 393              	.LBB184:
+ 394              	.LBI184:
   40:../../libdaisy//src/hid/usb.h **** 
- 275              		.loc 3 40 5 is_stmt 1 view .LVU56
+ 395              		.loc 5 40 5 is_stmt 1 view .LVU69
   40:../../libdaisy//src/hid/usb.h **** 
- 276              		.loc 3 40 5 is_stmt 0 view .LVU57
- 277              	.LBE103:
- 278              	.LBB104:
- 279              	.LBI104:
+ 396              		.loc 5 40 5 is_stmt 0 view .LVU70
+ 397              	.LBE184:
+ 398              	.LBB185:
+ 399              	.LBI185:
   77:../../libdaisy//src/sys/system.h ****     ~System() {}
- 280              		.loc 2 77 5 is_stmt 1 view .LVU58
+ 400              		.loc 4 77 5 is_stmt 1 view .LVU71
   77:../../libdaisy//src/sys/system.h ****     ~System() {}
- 281              		.loc 2 77 5 is_stmt 0 view .LVU59
- 282              	.LBE104:
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 16
+ 401              		.loc 4 77 5 is_stmt 0 view .LVU72
+ 402              	.LBE185:
+ 403              	.LBE186:
+ 404              	.LBE187:
+  13:MultiFX_nese10.cpp **** static DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS 	delr;
+ 405              		.loc 11 13 51 view .LVU73
+ 406 0010 114C     		ldr	r4, .L25+12
+  10:MultiFX_nese10.cpp **** 
+ 407              		.loc 11 10 18 view .LVU74
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 22
 
 
- 283              	.LBE105:
- 284              	.LBE106:
-   7:MultiFX_nese10.cpp **** 
- 285              		.loc 6 7 11 view .LVU60
- 286 000e FFF7FEBF 		b	__aeabi_atexit
- 287              	.LVL13:
- 288              	.L21:
- 289 0012 00BF     		.align	2
- 290              	.L20:
- 291 0014 00000000 		.word	.LANCHOR0
- 292 0018 00000000 		.word	__dso_handle
- 293 001c 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
- 294              	.LBE87:
- 295              	.LBE86:
- 296              		.cfi_endproc
- 297              	.LFE4957:
- 299              		.section	.init_array,"aw",%init_array
- 300              		.align	2
- 301 0000 00000000 		.word	_GLOBAL__sub_I_hw(target1)
- 302              		.global	hw
- 303              		.section	.bss.hw,"aw",%nobits
- 304              		.align	2
- 305              		.set	.LANCHOR0,. + 0
- 308              	hw:
- 309 0000 00000000 		.space	60
- 309      00000000 
- 309      00000000 
- 309      00000000 
- 309      00000000 
- 310              		.text
- 311              	.Letext0:
- 312              		.file 9 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\mach
- 313              		.file 10 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\sys
- 314              		.file 11 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\std
- 315              		.file 12 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\lib\\gcc\\arm-none-eabi\\10
- 316              		.file 13 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 317              		.file 14 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 318              		.file 15 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 319              		.file 16 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 320              		.file 17 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 321              		.file 18 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 322              		.file 19 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 323              		.file 20 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 324              		.file 21 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 325              		.file 22 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 326              		.file 23 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 327              		.file 24 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 328              		.file 25 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 329              		.file 26 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 330              		.file 27 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 331              		.file 28 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 332              		.file 29 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 333              		.file 30 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 334              		.file 31 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\sys
- 335              		.file 32 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\sys
- 336              		.file 33 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\sys
- 337              		.file 34 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\mat
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 17
+ 408 0012 FFF7FEFF 		bl	__aeabi_atexit
+ 409              	.LVL17:
+ 410              	.LBB188:
+ 411              	.LBI188:
+  85:../../DaisySP//Source/Effects/phaser.h ****     ~Phaser() {}
+ 412              		.loc 8 85 5 is_stmt 1 view .LVU75
+ 413              	.LBE188:
+ 414              	.LBE197:
+ 415              	.LBE200:
+  85:../../DaisySP//Source/Effects/phaser.h ****     ~Phaser() {}
+ 416              		.loc 8 85 14 view .LVU76
+ 417              	.LBB201:
+ 418              	.LBB198:
+  12:MultiFX_nese10.cpp **** static DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS 	dell;
+ 419              		.loc 11 12 24 is_stmt 0 view .LVU77
+ 420 0016 0E4A     		ldr	r2, .L25+4
+ 421 0018 1049     		ldr	r1, .L25+16
+ 422 001a 1148     		ldr	r0, .L25+20
+ 423 001c FFF7FEFF 		bl	__aeabi_atexit
+ 424              	.LVL18:
+ 425              	.LBB189:
+ 426              	.LBI189:
+  23:../../DaisySP//Source/Utility/delayline.h ****     ~DelayLine() {}
+ 427              		.loc 12 23 5 is_stmt 1 view .LVU78
+  23:../../DaisySP//Source/Utility/delayline.h ****     ~DelayLine() {}
+ 428              		.loc 12 23 5 is_stmt 0 view .LVU79
+ 429              	.LBE189:
+  13:MultiFX_nese10.cpp **** static DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS 	delr;
+ 430              		.loc 11 13 51 view .LVU80
+ 431 0020 2146     		mov	r1, r4
+ 432 0022 0B4A     		ldr	r2, .L25+4
+ 433 0024 0F48     		ldr	r0, .L25+24
+ 434 0026 FFF7FEFF 		bl	__aeabi_atexit
+ 435              	.LVL19:
+ 436              	.LBB190:
+ 437              	.LBI190:
+  23:../../DaisySP//Source/Utility/delayline.h ****     ~DelayLine() {}
+ 438              		.loc 12 23 5 is_stmt 1 view .LVU81
+  23:../../DaisySP//Source/Utility/delayline.h ****     ~DelayLine() {}
+ 439              		.loc 12 23 5 is_stmt 0 view .LVU82
+ 440              	.LBE190:
+  14:MultiFX_nese10.cpp **** static Tremolo										trem;
+ 441              		.loc 11 14 51 view .LVU83
+ 442 002a 2146     		mov	r1, r4
+ 443 002c 084A     		ldr	r2, .L25+4
+ 444 002e 0E48     		ldr	r0, .L25+28
+ 445 0030 FFF7FEFF 		bl	__aeabi_atexit
+ 446              	.LVL20:
+ 447              	.LBB191:
+ 448              	.LBI191:
+  24:../../DaisySP//Source/Effects/tremolo.h ****     ~Tremolo() {}
+ 449              		.loc 9 24 5 is_stmt 1 view .LVU84
+ 450              	.LBB192:
+ 451              	.LBB193:
+ 452              	.LBI193:
+  15:../../DaisySP//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
+ 453              		.loc 10 15 5 view .LVU85
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 23
 
 
- 338              		.file 35 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\std
- 339              		.file 36 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 340              		.file 37 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
- 341              		.file 38 "../../libdaisy//src/daisy_core.h"
- 342              		.file 39 "../../libdaisy//src/per/tim.h"
- 343              		.file 40 "../../libdaisy//src/per/sai.h"
- 344              		.file 41 "../../libdaisy//src/util/wav_format.h"
- 345              		.file 42 "../../libdaisy//src/per/gpio.h"
- 346              		.file 43 "../../libdaisy//src/dev/sdram.h"
- 347              		.file 44 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\lib\\gcc\\arm-none-eabi\\10
- 348              		.file 45 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\std
- 349              		.file 46 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\str
- 350              		.file 47 "../../DaisySP//Source/Control/adenv.h"
- 351              		.file 48 "../../DaisySP//Source/Utility/dsp.h"
- 352              		.file 49 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\wch
- 353              		.file 50 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\loc
- 354              		.file 51 "<built-in>"
- 355              		.file 52 "../../libdaisy//src/dev/sr_595.h"
-ARM GAS  C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s 			page 18
+  15:../../DaisySP//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
+ 454              		.loc 10 15 5 is_stmt 0 view .LVU86
+ 455              	.LBE193:
+ 456              	.LBE192:
+ 457              	.LBE191:
+  15:MultiFX_nese10.cpp **** static Parameter deltime;
+ 458              		.loc 11 15 25 view .LVU87
+ 459 0034 064A     		ldr	r2, .L25+4
+ 460 0036 0D49     		ldr	r1, .L25+32
+ 461 0038 0D48     		ldr	r0, .L25+36
+ 462 003a FFF7FEFF 		bl	__aeabi_atexit
+ 463              	.LVL21:
+ 464              	.LBB194:
+ 465              	.LBI194:
+  25:../../libdaisy//src/hid/parameter.h ****     /** Destructor */
+ 466              		.loc 1 25 5 is_stmt 1 view .LVU88
+ 467              	.LBB195:
+ 468              	.LBB196:
+ 469              	.LBI196:
+  21:../../libdaisy//src/hid/ctrl.h ****     /** destructor */
+ 470              		.loc 2 21 5 view .LVU89
+  21:../../libdaisy//src/hid/ctrl.h ****     /** destructor */
+ 471              		.loc 2 21 5 is_stmt 0 view .LVU90
+ 472              	.LBE196:
+ 473              	.LBE195:
+ 474              	.LBE194:
+  16:MultiFX_nese10.cpp **** 
+ 475              		.loc 11 16 18 view .LVU91
+ 476 003e 044A     		ldr	r2, .L25+4
+ 477 0040 0C49     		ldr	r1, .L25+40
+ 478 0042 0D48     		ldr	r0, .L25+44
+ 479              	.LBE198:
+ 480              	.LBE201:
+ 481              		.loc 11 47 1 view .LVU92
+ 482 0044 BDE81040 		pop	{r4, lr}
+ 483              		.cfi_restore 14
+ 484              		.cfi_restore 4
+ 485              		.cfi_def_cfa_offset 0
+ 486              	.LBB202:
+ 487              	.LBB199:
+  16:MultiFX_nese10.cpp **** 
+ 488              		.loc 11 16 18 view .LVU93
+ 489 0048 FFF7FEBF 		b	__aeabi_atexit
+ 490              	.LVL22:
+ 491              	.L26:
+ 492              		.align	2
+ 493              	.L25:
+ 494 004c 00000000 		.word	.LANCHOR0
+ 495 0050 00000000 		.word	__dso_handle
+ 496 0054 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 497 0058 00000000 		.word	_ZN7daisysp9DelayLineIfLj120000EED1Ev
+ 498 005c 00000000 		.word	_ZN7daisysp6PhaserD1Ev
+ 499 0060 00000000 		.word	_ZL4phas
+ 500 0064 0C530700 		.word	_ZL4dell
+ 501 0068 00000000 		.word	_ZL4delr
+ 502 006c 00000000 		.word	_ZN7daisysp7TremoloD1Ev
+ 503 0070 00000000 		.word	.LANCHOR1
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 24
+
+
+ 504 0074 00000000 		.word	_ZN5daisy9ParameterD1Ev
+ 505 0078 00000000 		.word	.LANCHOR2
+ 506              	.LBE199:
+ 507              	.LBE202:
+ 508              		.cfi_endproc
+ 509              	.LFE4963:
+ 511              		.section	.init_array,"aw",%init_array
+ 512              		.align	2
+ 513 0000 00000000 		.word	_GLOBAL__sub_I_currentDelay(target1)
+ 514              		.global	which_FX
+ 515              		.global	effectOn
+ 516              		.global	dryWet
+ 517              		.global	cutoff
+ 518              		.global	delayTarget
+ 519              		.global	feedback
+ 520              		.global	currentDelay
+ 521              		.section	.bss._ZL2hw,"aw",%nobits
+ 522              		.align	2
+ 523              		.set	.LANCHOR0,. + 0
+ 526              	_ZL2hw:
+ 527 0000 00000000 		.space	60
+ 527      00000000 
+ 527      00000000 
+ 527      00000000 
+ 527      00000000 
+ 528              		.section	.bss._ZL4phas,"aw",%nobits
+ 529              		.align	2
+ 532              	_ZL4phas:
+ 533 0000 00000000 		.space	77192
+ 533      00000000 
+ 533      00000000 
+ 533      00000000 
+ 533      00000000 
+ 534              		.section	.bss._ZL4trem,"aw",%nobits
+ 535              		.align	2
+ 536              		.set	.LANCHOR1,. + 0
+ 539              	_ZL4trem:
+ 540 0000 00000000 		.space	48
+ 540      00000000 
+ 540      00000000 
+ 540      00000000 
+ 540      00000000 
+ 541              		.section	.bss._ZL7deltime,"aw",%nobits
+ 542              		.align	2
+ 543              		.set	.LANCHOR2,. + 0
+ 546              	_ZL7deltime:
+ 547 0000 00000000 		.space	56
+ 547      00000000 
+ 547      00000000 
+ 547      00000000 
+ 547      00000000 
+ 548              		.section	.bss.currentDelay,"aw",%nobits
+ 549              		.align	2
+ 552              	currentDelay:
+ 553 0000 00000000 		.space	4
+ 554              		.section	.bss.cutoff,"aw",%nobits
+ 555              		.align	2
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 25
+
+
+ 558              	cutoff:
+ 559 0000 00000000 		.space	4
+ 560              		.section	.bss.delayTarget,"aw",%nobits
+ 561              		.align	2
+ 564              	delayTarget:
+ 565 0000 00000000 		.space	4
+ 566              		.section	.bss.dryWet,"aw",%nobits
+ 567              		.align	2
+ 570              	dryWet:
+ 571 0000 00000000 		.space	16
+ 571      00000000 
+ 571      00000000 
+ 571      00000000 
+ 572              		.section	.bss.effectOn,"aw",%nobits
+ 573              		.align	2
+ 576              	effectOn:
+ 577 0000 000000   		.space	3
+ 578              		.section	.bss.feedback,"aw",%nobits
+ 579              		.align	2
+ 582              	feedback:
+ 583 0000 00000000 		.space	4
+ 584              		.section	.bss.which_FX,"aw",%nobits
+ 587              	which_FX:
+ 588 0000 00       		.space	1
+ 589              		.section	.sdram_bss,"aw"
+ 590              		.align	2
+ 593              	_ZL4delr:
+ 594 0000 00000000 		.space	480012
+ 594      00000000 
+ 594      00000000 
+ 594      00000000 
+ 594      00000000 
+ 597              	_ZL4dell:
+ 598 7530c 00000000 		.space	480012
+ 598      00000000 
+ 598      00000000 
+ 598      00000000 
+ 598      00000000 
+ 599              		.text
+ 600              	.Letext0:
+ 601              		.file 15 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\mac
+ 602              		.file 16 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\sys
+ 603              		.file 17 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\std
+ 604              		.file 18 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\lib\\gcc\\arm-none-eabi\\10
+ 605              		.file 19 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 606              		.file 20 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 607              		.file 21 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 608              		.file 22 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 609              		.file 23 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 610              		.file 24 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 611              		.file 25 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 612              		.file 26 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 613              		.file 27 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 614              		.file 28 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 615              		.file 29 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 616              		.file 30 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 617              		.file 31 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 26
+
+
+ 618              		.file 32 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 619              		.file 33 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 620              		.file 34 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 621              		.file 35 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 622              		.file 36 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 623              		.file 37 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\sys
+ 624              		.file 38 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\sys
+ 625              		.file 39 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\sys
+ 626              		.file 40 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\mat
+ 627              		.file 41 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\std
+ 628              		.file 42 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 629              		.file 43 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\c++
+ 630              		.file 44 "../../libdaisy//src/daisy_core.h"
+ 631              		.file 45 "../../libdaisy//src/per/tim.h"
+ 632              		.file 46 "../../libdaisy//src/per/sai.h"
+ 633              		.file 47 "../../libdaisy//src/util/wav_format.h"
+ 634              		.file 48 "../../libdaisy//src/per/gpio.h"
+ 635              		.file 49 "../../libdaisy//src/dev/sdram.h"
+ 636              		.file 50 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\lib\\gcc\\arm-none-eabi\\10
+ 637              		.file 51 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\std
+ 638              		.file 52 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\str
+ 639              		.file 53 "../../DaisySP//Source/Control/adenv.h"
+ 640              		.file 54 "../../DaisySP//Source/Utility/dsp.h"
+ 641              		.file 55 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\wch
+ 642              		.file 56 "d:\\programmi\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\include\\loc
+ 643              		.file 57 "../../libdaisy//src/dev/sr_595.h"
+ 644              		.file 58 "<built-in>"
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 27
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 MultiFX_nese10.cpp
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:17     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:67     .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:75     .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:132    .text.startup.main:00000000 $t
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:140    .text.startup.main:00000000 main
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:185    .text.startup.main:00000024 $d
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:191    .text.startup._GLOBAL__sub_I_hw:00000000 $t
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:198    .text.startup._GLOBAL__sub_I_hw:00000000 _GLOBAL__sub_I_hw
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:291    .text.startup._GLOBAL__sub_I_hw:00000014 $d
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:300    .init_array:00000000 $d
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:308    .bss.hw:00000000 hw
-C:\Users\nicol\AppData\Local\Temp\ccHyDzht.s:304    .bss.hw:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:17     .text._ZN5daisy9ParameterD2Ev:00000000 $t
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:26     .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD2Ev
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:26     .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD1Ev
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:49     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:57     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:57     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:98     .text._ZN7daisysp6PhaserD2Ev:00000000 $t
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:106    .text._ZN7daisysp6PhaserD2Ev:00000000 _ZN7daisysp6PhaserD2Ev
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:106    .text._ZN7daisysp6PhaserD2Ev:00000000 _ZN7daisysp6PhaserD1Ev
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:123    .text._ZN7daisysp7TremoloD2Ev:00000000 $t
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:131    .text._ZN7daisysp7TremoloD2Ev:00000000 _ZN7daisysp7TremoloD2Ev
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:131    .text._ZN7daisysp7TremoloD2Ev:00000000 _ZN7daisysp7TremoloD1Ev
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:154    .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:162    .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:219    .text._ZN7daisysp9DelayLineIfLj120000EED2Ev:00000000 $t
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:227    .text._ZN7daisysp9DelayLineIfLj120000EED2Ev:00000000 _ZN7daisysp9DelayLineIfLj120000EED2Ev
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:227    .text._ZN7daisysp9DelayLineIfLj120000EED2Ev:00000000 _ZN7daisysp9DelayLineIfLj120000EED1Ev
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:244    .text.startup.main:00000000 $t
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:252    .text.startup.main:00000000 main
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:297    .text.startup.main:00000024 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:303    .text.startup._GLOBAL__sub_I_currentDelay:00000000 $t
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:310    .text.startup._GLOBAL__sub_I_currentDelay:00000000 _GLOBAL__sub_I_currentDelay
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:494    .text.startup._GLOBAL__sub_I_currentDelay:0000004c $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:532    .bss._ZL4phas:00000000 _ZL4phas
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:597    .sdram_bss:0007530c _ZL4dell
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:593    .sdram_bss:00000000 _ZL4delr
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:512    .init_array:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:587    .bss.which_FX:00000000 which_FX
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:576    .bss.effectOn:00000000 effectOn
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:570    .bss.dryWet:00000000 dryWet
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:558    .bss.cutoff:00000000 cutoff
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:564    .bss.delayTarget:00000000 delayTarget
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:582    .bss.feedback:00000000 feedback
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:552    .bss.currentDelay:00000000 currentDelay
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:522    .bss._ZL2hw:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:526    .bss._ZL2hw:00000000 _ZL2hw
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:529    .bss._ZL4phas:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:535    .bss._ZL4trem:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:539    .bss._ZL4trem:00000000 _ZL4trem
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:542    .bss._ZL7deltime:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:546    .bss._ZL7deltime:00000000 _ZL7deltime
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:549    .bss.currentDelay:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:555    .bss.cutoff:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:561    .bss.delayTarget:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:567    .bss.dryWet:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:573    .bss.effectOn:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:579    .bss.feedback:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:588    .bss.which_FX:00000000 $d
+C:\Users\nicol\AppData\Local\Temp\cckWUg93.s:590    .sdram_bss:00000000 $d
+                           .group:00000000 _ZN5daisy9ParameterD5Ev
                            .group:00000000 _ZN5daisy9DaisySeedD5Ev
+                           .group:00000000 _ZN7daisysp6PhaserD5Ev
+                           .group:00000000 _ZN7daisysp7TremoloD5Ev
+                           .group:00000000 _ZN7daisysp9DelayLineIfLj120000EED5Ev
+
+ARM GAS  C:\Users\nicol\AppData\Local\Temp\cckWUg93.s 			page 28
+
 
 UNDEFINED SYMBOLS
 _ZN5daisy9DaisySeed4InitEb
