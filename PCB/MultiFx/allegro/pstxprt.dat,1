@@ -1,0 +1,170 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.2.0 d001Feb-13-2022 at 18:40:16 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='MULTIFX';
+ POST_TIME='Sep 13 2021 14:16:54';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ CONN1 'PJ059AH_TH_PJ059AH_PJ059AH':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS3367@ORCAD_MY_LIBRARY.PJ059AH.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins3367@orcad_my_library.\pj059ah.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page1_ins3367@orcad_my_library.\pj059ah.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CONN2 'MJ-63022A_SMD_MJ63022A_MJ-63022':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS7229@ORCAD_MY_LIBRARY.MJ-63022A.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins7229@orcad_my_library.\mj-63022a.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page1_ins7229@orcad_my_library.\mj-63022a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CONN3 'MJ-63022A_SMD_MJ63022A_MJ-63022':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS7245@ORCAD_MY_LIBRARY.MJ-63022A.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins7245@orcad_my_library.\mj-63022a.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page1_ins7245@orcad_my_library.\mj-63022a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CONN4 'BM04B-SRSS-TB_SMD_BM04BSRSSTB_B':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS6375@ORCAD_MY_LIBRARY.BM04B-SRSS-TB.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins6375@orcad_my_library.\bm04b-srss-tb.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page1_ins6375@orcad_my_library.\bm04b-srss-tb.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J1 'SSM120LSV_SMD_SSM120LSV_SSM-120':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS136@ORCAD_MY_LIBRARY.SSM120LSV.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins136@orcad_my_library.\ssm120lsv.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page1_ins136@orcad_my_library.\ssm120lsv.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J2 'SSM120LSV_SMD_SSM120LSV_SSM-120':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS84@ORCAD_MY_LIBRARY.SSM120LSV.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins84@orcad_my_library.\ssm120lsv.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page1_ins84@orcad_my_library.\ssm120lsv.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ LD1 'LED_SMD_APHHS1005LSECKJ3PF_APHH':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS5859@ORCAD_MY_LIBRARY.LED.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins5859@orcad_my_library.\led.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page2_ins5859@orcad_my_library.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ POT1 'POTENTIOMETER_TH_POT3_10K':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS5271@ORCAD_MY_LIBRARY.POTENTIOMETER.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins5271@orcad_my_library.\potentiometer.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page2_ins5271@orcad_my_library.\potentiometer.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ POT2 'POTENTIOMETER_TH_POT3_10K':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS5665@ORCAD_MY_LIBRARY.POTENTIOMETER.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins5665@orcad_my_library.\potentiometer.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page2_ins5665@orcad_my_library.\potentiometer.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'RESISTOR_SMD_RESISTOR0603_2.2KO':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS10928@ORCAD_MY_LIBRARY.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins10928@orcad_my_library.\resistor.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page1_ins10928@orcad_my_library.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R2 'RESISTOR_SMD_RESISTOR0603_2.2KO':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS6887@ORCAD_MY_LIBRARY.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins6887@orcad_my_library.\resistor.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page1_ins6887@orcad_my_library.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R3 'RESISTOR_SMD_RESISTOR0603_750OH':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS5892@ORCAD_MY_LIBRARY.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins5892@orcad_my_library.\resistor.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page2_ins5892@orcad_my_library.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW1 'ANT11SF1CQE_TH_ANT11SF1CQE_ANT1':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS3416@ORCAD_MY_LIBRARY.ANT11SF1CQE.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins3416@orcad_my_library.\ant11sf1cqe.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page1_ins3416@orcad_my_library.\ant11sf1cqe.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW2 'TL3301DF260RG_SMD_TL3301DF260RG':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS3903@ORCAD_MY_LIBRARY.TL3301DF260RG.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins3903@orcad_my_library.\tl3301df260rg.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page2_ins3903@orcad_my_library.\tl3301df260rg.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW3 'TL3301DF260RG_SMD_TL3301DF260RG':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS4686@ORCAD_MY_LIBRARY.TL3301DF260RG.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins4686@orcad_my_library.\tl3301df260rg.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page2_ins4686@orcad_my_library.\tl3301df260rg.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW4 'TL3301DF260RG_SMD_TL3301DF260RG':;
+
+SECTION_NUMBER 1
+ '@MULTIFX.MULTIFX(SCH_1):INS4898@ORCAD_MY_LIBRARY.TL3301DF260RG.NORMAL(CHIPS)':
+ C_PATH='@multifx.multifx(sch_1):ins4898@orcad_my_library.\tl3301df260rg.normal\(chips)',
+ P_PATH='@multifx.multifx(sch_1):page2_ins4898@orcad_my_library.\tl3301df260rg.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.

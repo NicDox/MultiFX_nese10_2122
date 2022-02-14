@@ -1,0 +1,24 @@
+MultiFx - Daisy socket and Power  Revised: Saturday, February 12, 2022
+Nese10          Revision: 1.0
+
+
+
+
+
+
+
+Bill Of Materials       February 12,2022      18:10:57	Page1
+
+Item	Quantity	Reference	Part
+______________________________________________
+
+1	1	CONN1	PJ059AH
+2	2	CONN2,CONN3	MJ-63022A
+3	1	CONN4	BM04BSRSSTB
+4	2	J1,J2	SSM-120-L-SV
+5	1	LD1	APHHS1005LSECK/J3-PF
+6	2	POT1,POT2	10k
+7	2	R1,R2	2.2kOhm
+8	1	R3	750Ohm
+9	1	SW1	ANT11SF1CQE
+10	3	SW2,SW3,SW4	TL3301DF260RG

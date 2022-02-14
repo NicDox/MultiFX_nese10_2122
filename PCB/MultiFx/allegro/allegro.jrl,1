@@ -1,0 +1,87 @@
+\t (00:00:03) allegro 17.2 S078 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Sun Feb 13 19:23:18 2022
+\t (00:00:03)         Host=DESKTOP-1CLJ0BQ User=Pierfrancesco Pid=14728 CPUs=8
+\t (00:00:03) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe -mpssession Pierfrancesco C:\TEMP\MULTIFX\allegro\MULTIFX.brd
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
+\t (00:00:05) Opening existing design...
+\i (00:00:05) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged MULTIFX
+\d (00:00:05) Design opened: C:/TEMP/MULTIFX/allegro/MULTIFX.brd
+\t (00:00:06) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
+\i (00:00:06) trapsize 1712
+\i (00:00:06) trapsize 1763
+\i (00:00:06) trapsize 1712
+\t (00:00:06) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
+\i (00:00:06) trapsize 1328
+\i (00:00:06) trapsize 1328
+\i (00:00:06) generaledit 
+\i (00:00:07) zoom out 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom out 256.1752 203.9537
+\t (00:00:07) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:00:07) trapsize 2656
+\i (00:00:07) zoom out 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom out 256.1751 203.9537
+\t (00:00:07) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:00:07) trapsize 5312
+\i (00:00:07) zoom out 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom out 256.1751 203.9537
+\t (00:00:07) Grids are drawn 1.6000, 1.6000 apart for enhanced viewing.
+\i (00:00:07) trapsize 10623
+\i (00:00:07) zoom out 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom out 256.1752 203.9537
+\t (00:00:07) Grids are drawn 3.2000, 3.2000 apart for enhanced viewing.
+\i (00:00:07) trapsize 21247
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 180.1721 210.7673
+\t (00:00:08) Grids are drawn 1.6000, 1.6000 apart for enhanced viewing.
+\i (00:00:08) trapsize 10623
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 180.1721 210.7674
+\t (00:00:08) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:00:08) trapsize 5312
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in 180.1721 210.7674
+\t (00:00:09) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:00:09) trapsize 2656
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in 180.1721 210.7674
+\t (00:00:09) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
+\i (00:00:09) trapsize 1328
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out 195.1776 205.6948
+\t (00:00:11) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:00:11) trapsize 2656
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out 209.6254 191.7782
+\t (00:00:12) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:00:12) trapsize 5312
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out 209.6255 191.7782
+\t (00:00:12) Grids are drawn 1.6000, 1.6000 apart for enhanced viewing.
+\i (00:00:12) trapsize 10623
+\i (00:00:14) roam start
+\i (00:00:14) roam y 32
+\i (00:00:14) roam y 32
+\i (00:00:14) roam y 16
+\i (00:00:14) roam y 16
+\i (00:00:14) roam y 16
+\i (00:00:14) roam y 32
+\i (00:00:14) roam end
+\i (00:00:15) zoom in 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom in 284.4934 172.3107
+\t (00:00:15) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:00:15) trapsize 5312
+\i (00:16:29) exit 
+\t (00:16:29)     Journal end - Sun Feb 13 19:39:44 2022

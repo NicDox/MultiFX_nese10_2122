@@ -1,0 +1,84 @@
+Sat Feb 12 19:21:56 2022				Page     1
+
+
+ 
+Update Symbols/Modules Logfile
+	Sat Feb 12 19:21:56 2022
+
+------ Module Refresh Messages ------
+
+SUMMARY:    Updated 0 out of 0 modules
+
+------ End Module Messages     ------
+
+
+
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Symbol                                                   )
+(                                                                     )
+(    Drawing          : MULTIFX.brd                                   )
+(    Software Version : 17.2S078                                      )
+(    Date/Time        : Sat Feb 12 19:21:56 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Sat Feb 12 19:21:56 2022				Page     1
+
+
+------ Symbol Refresh Directives ------
+
+Input design  = 'C:/temp/MultiFx/allegro/MULTIFX.brd'
+Output design = ''
+
+Update mechanical symbols              = 'NO'
+Update format symbols                  = 'NO'
+Update package symbols                 = 'YES'
+Update shape/flash symbols             = 'NO'
+Update symbol padstacks                = 'NO'
+Preserve padstacks replaced on pins    = 'NO'
+Reset symbol text and size locations   = 'NO'
+Reset Pin Escapes (fanouts)            = 'NO'
+Ripup Etch                             = 'NO'
+Reset custom drill data                = 'NO'
+
+
+------ Library Paths ------
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           c:/cadence/spb_17.2/share/local/pcb/symbols 
+           c:/cadence/spb_17.2/share/pcb/pcb_lib/symbols 
+           c:/cadence/spb_17.2/share/pcb/allegrolib/symbols 
+           C:/ORCAD_PERSONAL_LIBRARY/FOOTPRINTS/ 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           c:/cadence/spb_17.2/share/local/pcb/padstacks 
+           c:/cadence/spb_17.2/share/pcb/pcb_lib/symbols 
+           c:/cadence/spb_17.2/share/pcb/allegrolib/symbols 
+           C:/ORCAD_PERSONAL_LIBRARY/PADSTACKS/ 
+
+
+------ Symbol Refresh Messages ------
+
+'SMD_APHHS1005LSECKJ3PF'  symbol refreshed successfully.
+'SMD_RESISTOR0603'  symbol refreshed successfully.
+'SMD_BM04BSRSSTB'  symbol refreshed successfully.
+'SMD_MJ63022A'  symbol refreshed successfully.
+'TH_PJ059AH'  symbol refreshed successfully.
+'SMD_TL3301DF260RG'  symbol refreshed successfully.
+'TH_ANT11SF1CQE'  symbol refreshed successfully.
+'TH_POT3'  symbol refreshed successfully.
+'SMD_SSM120LSV'  symbol refreshed successfully.
+
+
+----- Symbol Update Summary ----
+
+Updated symbols: 9 out 9
+    Design updated.
+

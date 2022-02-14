@@ -1,0 +1,62 @@
+Date and Time : 02/12/22 18:13:37
+
+--------------------------------------------------
+Checking Schematic:  MultiFx
+--------------------------------------------------
+Checking Electrical Rules 
+WARNING(ORCAP-1829): Possible pin type conflict 3V3A  Power Connected to Bidirectional
+                    MultiFx, Peripherals  (7.40, 3.30) 
+WARNING(ORCAP-1829): Possible pin type conflict POT1,P1  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (4.30, 3.50) 
+WARNING(ORCAP-1829): Possible pin type conflict POT2,P1  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (7.40, 3.50) 
+WARNING(ORCAP-1829): Possible pin type conflict R2,P2  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (3.20, 4.60) 
+WARNING(ORCAP-1829): Possible pin type conflict R1,P2  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (2.60, 4.60) 
+WARNING(ORCAP-1829): Possible pin type conflict J1,P1  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (2.30, 0.90) 
+WARNING(ORCAP-1829): Possible pin type conflict CONN4,P1  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (1.20, 5.20) 
+WARNING(ORCAP-1829): Possible pin type conflict GND  Power Connected to Bidirectional
+                    MultiFx, Peripherals  (4.30, 4.50) 
+WARNING(ORCAP-1829): Possible pin type conflict SW3,P1  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (4.30, 1.20) 
+WARNING(ORCAP-1829): Possible pin type conflict SW4,P2  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (1.00, 3.80) 
+WARNING(ORCAP-1829): Possible pin type conflict SW4,P1  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (1.00, 3.70) 
+WARNING(ORCAP-1829): Possible pin type conflict POT1,P3  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (4.30, 4.10) 
+WARNING(ORCAP-1829): Possible pin type conflict LD1,C  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (9.00, 1.20) 
+WARNING(ORCAP-1829): Possible pin type conflict SW2,P2  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (1.00, 1.30) 
+WARNING(ORCAP-1829): Possible pin type conflict SW2,P1  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (1.00, 1.20) 
+WARNING(ORCAP-1829): Possible pin type conflict SW3,P2  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (4.30, 1.30) 
+WARNING(ORCAP-1829): Possible pin type conflict POT2,P3  Bidirectional Connected to Power
+                    MultiFx, Peripherals  (7.40, 4.10) 
+WARNING(ORCAP-1829): Possible pin type conflict J1,P20  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (2.30, 2.80) 
+WARNING(ORCAP-1829): Possible pin type conflict CONN1,P2  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (6.90, 2.20) 
+WARNING(ORCAP-1829): Possible pin type conflict CONN4,P5  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (1.00, 5.00) 
+WARNING(ORCAP-1829): Possible pin type conflict CONN3,P1  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (8.50, 4.90) 
+WARNING(ORCAP-1829): Possible pin type conflict CONN4,P6  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (1.00, 6.00) 
+WARNING(ORCAP-1829): Possible pin type conflict J2,P20  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (3.80, 0.90) 
+WARNING(ORCAP-1829): Possible pin type conflict CONN1,P3  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (6.90, 2.10) 
+WARNING(ORCAP-1829): Possible pin type conflict CONN2,P1  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (5.80, 4.90) 
+WARNING(ORCAP-1829): Possible pin type conflict CONN4,P4  Bidirectional Connected to Power
+                    MultiFx, DaisySeed&Power  (1.20, 5.80) 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
