@@ -209,7 +209,8 @@ build/MultiFX_nese10.o: MultiFX_nese10.cpp \
  ../../DaisySP//Source/Utility/metro.h \
  ../../DaisySP//Source/Utility/port.h \
  ../../DaisySP//Source/Utility/samplehold.h \
- ../../DaisySP//Source/Utility/smooth_random.h
+ ../../DaisySP//Source/Utility/smooth_random.h \
+ ../../libdaisy//src/dev/oled_ssd130x.h
 ../../libdaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
 ../../libdaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h:
 ../../libdaisy//Drivers/CMSIS/Include/core_cm7.h:
@@ -448,3 +449,4 @@ build/MultiFX_nese10.o: MultiFX_nese10.cpp \
 ../../DaisySP//Source/Utility/port.h:
 ../../DaisySP//Source/Utility/samplehold.h:
 ../../DaisySP//Source/Utility/smooth_random.h:
+../../libdaisy//src/dev/oled_ssd130x.h:
