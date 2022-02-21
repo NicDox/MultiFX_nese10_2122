@@ -1,0 +1,88 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    NC DRILL Log                                                     )
+(                                                                     )
+(    Drawing          : MULTIFX.brd                                   )
+(    Software Version : 17.2S078                                      )
+(    Date/Time        : Sun Feb 20 19:14:37 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Processing NC Parameters file 'nc_param.txt' ...
+
+ NC PARAMETERS
+ -------------
+
+ FORMAT   		3.3
+ MACHINE-OFFSET		x:0.00000	y:0.00000   (mm)
+ FEEDRATE		1
+ COORDINATES		ABSOLUTE
+ OUTPUT-UNITS		METRIC
+ TOOL-ORDER		INCREASING
+ REPEAT-CODES		NO
+ SUPPRESS-LEAD-ZEROES	YES
+ SUPPRESS-TRAIL-ZEROES	NO
+ SUPPRESS-EQUAL		NO
+ TOOL-SELECT		YES
+ HEADER			none
+ LEADER			12
+ CODE			ASCII
+ SEPARATE		YES
+ SEPARATE-ROUTING	NO
+ OPTIMIZE_DRILLING	NO
+ ENHANCED_EXCELLON	YES
+ SCALE			1.000000
+
+ WARNING(SPMHMF-360): Design precision is greater than that of the drill output file data.
+ WARNING(SPMHMF-361): Data rounding errors are very possible.
+ WARNING(SPMHMF-365): This design contains 11 slot holes that cannot be drilled.
+ WARNING(SPMHMF-366): They can be processed by NC routing instead.
+ WARNING(SPMHMF-368): Cannot find NC Drill tool file 'nc_tools.txt'
+ WARNING(SPMHMF-369): ... will auto-generate tool file 'nc_tools_auto.txt'.
+
+
+     Auto-generating tool file 'nc_tools_auto.txt' ...
+
+           Size  Plating  Tool        + Tolerance  - Tolerance
+
+         0.3000  P        T01            0.000000     0.000000
+         1.2000  P        T02            0.000000     0.000000
+         1.8500  P        T03            0.000000     0.000000
+         2.2000  N        T04            0.000000     0.000000
+         5.0000  N        T05            0.000000     0.000000
+
+
+ Drill files being output to directory 'C:/temp/MultiFx/allegro' ...
+
+
+
+     'MULTIFX-1-2.drl' created for holes connecting TOP and BOTTOM ; Plating = PLATED
+     --------------------------------------------------------------------------------
+
+     Tool  Num     Size      +/- Tolerance     Plating   Quantity
+
+     T01    1.   0.3000    0.0000/  0.0000      PLATED         22
+     T02    2.   1.2000    0.0000/  0.0000      PLATED          6
+     T03    3.   1.8500    0.0000/  0.0000      PLATED          3
+
+     ---- Total holes:                                         31
+
+     ---- Total head travel:              2.59 feet (0.79 meters)
+
+
+
+
+     'MULTIFX-1-2-np.drl' created for holes connecting TOP and BOTTOM ; Plating = NON_PLATED
+     ---------------------------------------------------------------------------------------
+
+     Tool  Num     Size      +/- Tolerance     Plating   Quantity
+
+     T04    1.   2.2000    0.0000/  0.0000  NON_PLATED          1
+     T05    2.   5.0000    0.0000/  0.0000  NON_PLATED          4
+
+     ---- Total holes:                                          5
+
+     ---- Total head travel:              0.74 feet (0.23 meters)
+

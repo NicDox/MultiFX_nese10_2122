@@ -4,15 +4,36 @@
 (                                                                     )
 (    Drawing          : MULTIFX.brd                                   )
 (    Software Version : 17.2S078                                      )
-(    Date/Time        : Sun Feb 13 15:33:10 2022                      )
+(    Date/Time        : Sun Feb 20 19:45:28 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
 
-Regenerating DRC
-  Original DRC errors:   0
-  Updated DRC errors:    0
-  DRC elapsed time:      00:00:01
+WARNING: in VIA location = (170.4000 238.3000)
+  pad stack name = DRILL_5
+  WARNING(SPMHA1-97): Illegal drill plating.
+Non-Plated hole has connected objects, consider changing to PLATED. 
 
-0 warnings, 0 errors detected, 0 errors  fixed.
+
+WARNING: in VIA location = (265.9000 238.5000)
+  pad stack name = DRILL_5
+  WARNING(SPMHA1-97): Illegal drill plating.
+Non-Plated hole has connected objects, consider changing to PLATED. 
+
+
+WARNING: in VIA location = (265.9000 179.5000)
+  pad stack name = DRILL_5
+  WARNING(SPMHA1-97): Illegal drill plating.
+Non-Plated hole has connected objects, consider changing to PLATED. 
+
+
+WARNING: in VIA location = (170.4000 179.5000)
+  pad stack name = DRILL_5
+  WARNING(SPMHA1-97): Illegal drill plating.
+Non-Plated hole has connected objects, consider changing to PLATED. 
+
+
+WARNING:   WARNING(SPMHDB-42): Run batch DRC to regenerate DRC errs.
+
+5 warnings, 0 errors detected, 0 errors could be fixed.

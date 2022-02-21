@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : MULTIFX.brd                                   )
 (    Software Version : 17.2S078                                      )
-(    Date/Time        : Sun Feb 13 19:23:14 2022                      )
+(    Date/Time        : Sun Feb 20 17:19:29 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -27,7 +27,7 @@ CmdLine: netrev.exe -y 1 -i C:\TEMP\MULTIFX\allegro C:\temp\MultiFx\allegro\MULT
 ------ Preparing to read pst files ------
 
 Starting to read C:/TEMP/MULTIFX/allegro/pstchip.dat 
-   Finished reading C:/TEMP/MULTIFX/allegro/pstchip.dat (00:00:00.04)
+   Finished reading C:/TEMP/MULTIFX/allegro/pstchip.dat (00:00:00.07)
 Starting to read C:/TEMP/MULTIFX/allegro/pstxprt.dat 
    Finished reading C:/TEMP/MULTIFX/allegro/pstxprt.dat (00:00:00.00)
 Starting to read C:/TEMP/MULTIFX/allegro/pstxnet.dat 
@@ -38,31 +38,31 @@ Starting to read C:/TEMP/MULTIFX/allegro/pstxnet.dat
 
 ------ Library Paths ------
 MODULEPATH =  . 
-           c:/cadence/spb_17.2/share/local/pcb/modules 
+           C:/Cadence/SPB_17.2/share/local/pcb/modules 
 
 PSMPATH =  . 
            symbols 
            .. 
            ../symbols 
-           c:/cadence/spb_17.2/share/local/pcb/symbols 
-           c:/cadence/spb_17.2/share/pcb/pcb_lib/symbols 
-           c:/cadence/spb_17.2/share/pcb/allegrolib/symbols 
+           C:/Cadence/SPB_17.2/share/local/pcb/symbols 
+           C:/Cadence/SPB_17.2/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_17.2/share/pcb/allegrolib/symbols 
            C:/ORCAD_PERSONAL_LIBRARY/FOOTPRINTS/ 
 
 PADPATH =  . 
            symbols 
            .. 
            ../symbols 
-           c:/cadence/spb_17.2/share/local/pcb/padstacks 
-           c:/cadence/spb_17.2/share/pcb/pcb_lib/symbols 
-           c:/cadence/spb_17.2/share/pcb/allegrolib/symbols 
+           C:/Cadence/SPB_17.2/share/local/pcb/padstacks 
+           C:/Cadence/SPB_17.2/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_17.2/share/pcb/allegrolib/symbols 
            C:/ORCAD_PERSONAL_LIBRARY/PADSTACKS/ 
 
 
 ------ Summary Statistics ------
 
 
-netrev run on Feb 13 19:23:14 2022
+netrev run on Feb 20 17:19:29 2022
    DESIGN NAME : 'MULTIFX'
    PACKAGING ON Sep 13 2021 14:16:54
 
@@ -87,6 +87,6 @@ netrev run on Feb 13 19:23:14 2022
  No oversight detected
  No warning detected
 
-cpu time      0:00:32
-elapsed time  0:00:00
+cpu time      0:01:03
+elapsed time  0:00:01
 

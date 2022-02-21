@@ -4,12 +4,12 @@
 (                                                                     )
 (    Drawing          : MULTIFX.brd                                   )
 (    Software Version : 17.2S078                                      )
-(    Date/Time        : Sun Feb 13 16:26:40 2022                      )
+(    Date/Time        : Sun Feb 20 19:14:07 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
-Sun Feb 13 16:26:40 2022				Page     1
+Sun Feb 20 19:14:07 2022				Page     1
 
 
 ------ Pad Stack Refresh Options ------
@@ -41,76 +41,88 @@ PADPATH =  .
 
 ------ Pad Stack Refresh Messages ------
 
-'DRILL_5'  pad stack refresh starting.
-
-     'DRILL_5'  pad stack refreshed successfully.
-     
 'VIA'  pad stack refresh starting.
 
      'VIA'  pad stack refreshed successfully.
      
-'VIA_0D6_0D3'  pad stack refresh starting.
+'SMD_RECTANGLE_0D802_1D505'  pad stack refresh starting.
 
-     'VIA_0D6_0D3'  pad stack refreshed successfully.
+     'SMD_RECTANGLE_0D802_1D505'  pad stack refreshed successfully.
      
-'SMD_RECTANGLE_1D4_2D1'  pad stack refresh starting.
+'SMD_RECTANGLE_0D91_1D22'  pad stack refresh starting.
 
-     'SMD_RECTANGLE_1D4_2D1'  pad stack refreshed successfully.
+     'SMD_RECTANGLE_0D91_1D22'  pad stack refreshed successfully.
      
-'TH_RECT_1D85_2D45'  pad stack refresh starting.
+'SMD_RECTANGLE_2D2_4D2'  pad stack refresh starting.
 
-     'TH_RECT_1D85_2D45'  pad stack refreshed successfully.
+     'SMD_RECTANGLE_2D2_4D2'  pad stack refreshed successfully.
      
-'TH_1D85_2D45'  pad stack refresh starting.
+'DRILL_2D2'  pad stack refresh starting.
 
-     'TH_1D85_2D45'  pad stack refreshed successfully.
-     
-'SMD_RECTANGLE_0D65_0D9'  pad stack refresh starting.
-
-     'SMD_RECTANGLE_0D65_0D9'  pad stack refreshed successfully.
-     
-'TH_RECT_1D2_1D8'  pad stack refresh starting.
-
-     'TH_RECT_1D2_1D8'  pad stack refreshed successfully.
-     
-'DRILL_RECT_2_2D4'  pad stack refresh starting.
-
-     'DRILL_RECT_2_2D4'  pad stack refreshed successfully.
-     
-'TH_1D2_1D8'  pad stack refresh starting.
-
-     'TH_1D2_1D8'  pad stack refreshed successfully.
-     
-'SMD_RECTANGLE_0D5_0D7'  pad stack refresh starting.
-
-     'SMD_RECTANGLE_0D5_0D7'  pad stack refreshed successfully.
-     
-'SMD_RECTANGLE_1D02_1D905'  pad stack refresh starting.
-
-     'SMD_RECTANGLE_1D02_1D905'  pad stack refreshed successfully.
-     
-'SMD_RECTANGLE_1D2_1D8'  pad stack refresh starting.
-
-     'SMD_RECTANGLE_1D2_1D8'  pad stack refreshed successfully.
-     
-'SMD_RECTANGLE_0D6_1D55'  pad stack refresh starting.
-
-     'SMD_RECTANGLE_0D6_1D55'  pad stack refreshed successfully.
-     
-'TH_OBLONG_1D8_3'  pad stack refresh starting.
-
-     'TH_OBLONG_1D8_3'  pad stack refreshed successfully.
-     
-'TH_RECT_1D8_3'  pad stack refresh starting.
-
-     'TH_RECT_1D8_3'  pad stack refreshed successfully.
+     'DRILL_2D2'  pad stack refreshed successfully.
      
 'TH_RECT_1D6_2D2'  pad stack refresh starting.
 
      'TH_RECT_1D6_2D2'  pad stack refreshed successfully.
      
-'DRILL_2D2'  pad stack refresh starting.
+'TH_RECT_1D8_3'  pad stack refresh starting.
 
-     'DRILL_2D2'  pad stack refreshed successfully.
+     'TH_RECT_1D8_3'  pad stack refreshed successfully.
+     
+'TH_OBLONG_1D8_3'  pad stack refresh starting.
+
+     'TH_OBLONG_1D8_3'  pad stack refreshed successfully.
+     
+'SMD_RECTANGLE_0D6_1D55'  pad stack refresh starting.
+
+     'SMD_RECTANGLE_0D6_1D55'  pad stack refreshed successfully.
+     
+'SMD_RECTANGLE_1D2_1D8'  pad stack refresh starting.
+
+     'SMD_RECTANGLE_1D2_1D8'  pad stack refreshed successfully.
+     
+'SMD_RECTANGLE_1D02_1D905'  pad stack refresh starting.
+
+     'SMD_RECTANGLE_1D02_1D905'  pad stack refreshed successfully.
+     
+'SMD_RECTANGLE_0D5_0D7'  pad stack refresh starting.
+
+     'SMD_RECTANGLE_0D5_0D7'  pad stack refreshed successfully.
+     
+'TH_1D2_1D8'  pad stack refresh starting.
+
+     'TH_1D2_1D8'  pad stack refreshed successfully.
+     
+'DRILL_RECT_2_2D4'  pad stack refresh starting.
+
+     'DRILL_RECT_2_2D4'  pad stack refreshed successfully.
+     
+'TH_RECT_1D2_1D8'  pad stack refresh starting.
+
+     'TH_RECT_1D2_1D8'  pad stack refreshed successfully.
+     
+'SMD_RECTANGLE_0D65_0D9'  pad stack refresh starting.
+
+     'SMD_RECTANGLE_0D65_0D9'  pad stack refreshed successfully.
+     
+'TH_1D85_2D45'  pad stack refresh starting.
+
+     'TH_1D85_2D45'  pad stack refreshed successfully.
+     
+'TH_RECT_1D85_2D45'  pad stack refresh starting.
+
+     'TH_RECT_1D85_2D45'  pad stack refreshed successfully.
+     
+'SMD_RECTANGLE_1D4_2D1'  pad stack refresh starting.
+
+     'SMD_RECTANGLE_1D4_2D1'  pad stack refreshed successfully.
+     
+'VIA_0D6_0D3'  pad stack refresh starting.
+
+     'VIA_0D6_0D3'  pad stack refreshed successfully.
+     
+'DRILL_5'  pad stack refresh starting.
+
+     'DRILL_5'  pad stack refreshed successfully.
      
 Completed refreshing all pad stacks successfully.

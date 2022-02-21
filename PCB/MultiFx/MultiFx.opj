@@ -129,9 +129,11 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
-    (Resistor
-      (FullPartName "Resistor.Normal")
-      (LibraryName "C:\ORCAD_PERSONAL_LIBRARY\ORCAD_MY_LIBRARY.OLB")
+    (OFFPAGELEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-R
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (GND
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
@@ -139,15 +141,29 @@
     (VCC_BAR
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
+    (Diode
+      (FullPartName "Diode.Normal")
+      (LibraryName "C:\ORCAD_PERSONAL_LIBRARY\ORCAD_MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
+    (Inductor
+      (FullPartName "Inductor.Normal")
+      (LibraryName "C:\ORCAD_PERSONAL_LIBRARY\ORCAD_MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
+    (cap_electrolytic
+      (FullPartName "cap_electrolytic.Normal")
+      (LibraryName "C:\ORCAD_PERSONAL_LIBRARY\ORCAD_MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
+    (AP1509-33SG-13
+      (FullPartName "AP1509-33SG-13.Normal")
+      (LibraryName "C:\ORCAD_PERSONAL_LIBRARY\ORCAD_MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
+    (Resistor
+      (FullPartName "Resistor.Normal")
+      (LibraryName "C:\ORCAD_PERSONAL_LIBRARY\ORCAD_MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
     (BM04B-SRSS-TB
       (FullPartName "BM04B-SRSS-TB.Normal")
       (LibraryName "C:\ORCAD_PERSONAL_LIBRARY\ORCAD_MY_LIBRARY.OLB")
-      (DeviceIndex "0"))
-    (OFFPAGELEFT-R
-      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (OFFPAGELEFT-L
-      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (LED
       (FullPartName "LED.Normal")
@@ -194,7 +210,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 52 1349 52 373")
-        (Scroll "-62 60")
+        (Scroll "-62 0")
         (Zoom "116")
         (Occurrence "/"))
       (Path "C:\TEMP\MULTIFX\MULTIFX.DSN")
@@ -203,11 +219,21 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 78 1349 78 421")
-        (Scroll "-135 22")
+        (Placement "44 0 1 -1 -1 -8 -31 78 1349 78 421")
+        (Scroll "-49 324")
         (Zoom "116")
         (Occurrence "/"))
       (Path "C:\TEMP\MULTIFX\MULTIFX.DSN")
       (Schematic "MultiFx")
-      (Page "Peripherals")))
+      (Page "Peripherals_1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 104 1401 104 425")
+        (Scroll "-212 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\TEMP\MULTIFX\MULTIFX.DSN")
+      (Schematic "MultiFx")
+      (Page "Peripherals_2")))
   (ISPCBBASICLICENSE "false"))
