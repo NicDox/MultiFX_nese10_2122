@@ -1,6 +1,6 @@
 \t (00:00:07) allegro 17.2 S078 Windows SPB 64-bit Edition
-\t (00:00:07)     Journal start - Mon Feb 21 08:54:54 2022
-\t (00:00:07)         Host=DESKTOP-1CLJ0BQ User=Pierfrancesco Pid=10180 CPUs=8
+\t (00:00:07)     Journal start - Thu Feb 24 11:16:45 2022
+\t (00:00:07)         Host=DESKTOP-1CLJ0BQ User=Pierfrancesco Pid=6728 CPUs=8
 \t (00:00:07) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\temp\MultiFx\allegro\MULTIFX.brd
 \t (00:00:07) 
    (00:00:07) Loading axlcore.cxt 
@@ -9,81 +9,221 @@
 \d (00:00:08) Design opened: C:/temp/MultiFx/allegro/MULTIFX.brd
 \t (00:00:08) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
 \i (00:00:08) trapsize 8047
-\i (00:00:09) trapsize 8283
-\i (00:00:09) trapsize 8047
+\i (00:00:08) trapsize 8283
+\i (00:00:08) trapsize 8047
 \t (00:00:09) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
 \i (00:00:09) trapsize 6240
 \i (00:00:09) trapsize 6240
 \i (00:00:09) generaledit 
-\i (00:00:16) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "File: PASTEMASKT"
-\i (00:00:16) color -globvis off 
-\i (00:00:16) color -vis 'BOARD GEOMETRY/DESIGN_OUTLINE' 
-\i (00:00:16) color -vis 'DRC ERROR CLASS/PASTEMASK_TOP' 
-\i (00:00:16) color -vis PIN/PASTEMASK_TOP 
-\i (00:00:16) color -vis 'VIA CLASS/PASTEMASK_TOP' 
-\i (00:00:16) trapsize 6240
-\i (00:00:16) generaledit 
-\i (00:00:19) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "File: PASTEMASKB"
-\i (00:00:19) color -globvis off 
-\i (00:00:20) color -vis 'BOARD GEOMETRY/DESIGN_OUTLINE' 
-\i (00:00:20) color -vis 'DRC ERROR CLASS/PASTEMASK_BOTTOM' 
-\i (00:00:20) color -vis PIN/PASTEMASK_BOTTOM 
-\i (00:00:20) color -vis 'VIA CLASS/PASTEMASK_BOTTOM' 
-\i (00:00:20) trapsize 6240
-\i (00:00:20) generaledit 
-\i (00:00:37) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "File: ETCHT"
-\i (00:00:37) color -globvis off 
-\i (00:00:37) color -vis 'BOARD GEOMETRY/DESIGN_OUTLINE' 
-\i (00:00:37) color -vis 'DRC ERROR CLASS/TOP' 
-\i (00:00:37) color -vis ETCH/TOP 
-\i (00:00:37) color -vis PIN/TOP 
-\i (00:00:37) color -vis 'VIA CLASS/TOP' 
-\i (00:00:37) color -vis 'ANTI ETCH/TOP' 
-\i (00:00:37) color -vis BOUNDARY/TOP 
-\i (00:00:37) color -vis CAVITY/TOP 
-\i (00:00:37) trapsize 6240
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 189.6934 174.9480
+\t (00:00:11) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:00:11) trapsize 3120
+\i (00:00:17) setwindow form.find
+\i (00:00:17) FORM find all_off  
+\i (00:00:18) FORM find text YES 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) pick grid 190.3174 205.6484
+\t (00:00:21) last pick:  190.3000 205.6500
+\i (00:00:22) prepopup 190.3174 205.6484
+\i (00:00:25) pop dyn_option_select @:@Spin 
+\i (00:00:25) spin 
+\i (00:00:27) iangle 180.000
+\t (00:00:27) last angle:  0.000 Degrees
+\i (00:00:27) generaledit 
+\i (00:00:29) drag_start grid 192.7510 206.5844
+\i (00:00:29) move 
+\t (00:00:29) last pick:  191.0000 206.1000
+\t (00:00:29) Pick new location for the element(s).
+\i (00:00:32) drag_stop grid 188.8198 213.1363
+\i (00:00:32) generaledit 
+\i (00:00:34) pick grid 189.8182 195.4773
+\t (00:00:34) last pick:  189.8000 195.5000
+\i (00:00:34) prepopup 189.8182 195.4773
+\i (00:00:36) pop dyn_option_select @:@Spin 
+\i (00:00:36) spin 
+\i (00:00:37) iangle -180.000
+\t (00:00:37) last angle:  0.000 Degrees
 \i (00:00:37) generaledit 
-\i (00:00:41) zoom in 1 
-\i (00:00:41) setwindow pcb
-\i (00:00:41) zoom in 186.0735 219.0201
-\t (00:00:41) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
-\i (00:00:41) trapsize 3120
-\i (00:00:41) zoom in 1 
-\i (00:00:41) setwindow pcb
-\i (00:00:41) zoom in 186.0735 219.0201
-\t (00:00:41) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
-\i (00:00:41) trapsize 1560
-\i (00:00:42) zoom in 1 
-\i (00:00:42) setwindow pcb
-\i (00:00:42) zoom in 186.0736 219.0201
-\t (00:00:42) Grids are drawn 0.1000, 0.1000 apart for enhanced viewing.
-\i (00:00:42) trapsize 780
-\i (00:00:43) zoom out 1 
-\i (00:00:43) setwindow pcb
-\i (00:00:43) zoom out 186.0736 219.0201
-\t (00:00:43) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
-\i (00:00:43) trapsize 1560
-\i (00:00:44) zoom out 1 
-\i (00:00:44) setwindow pcb
-\i (00:00:44) zoom out 186.0736 219.0202
-\t (00:00:44) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
-\i (00:00:44) trapsize 3120
-\i (00:00:54) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "File: ETCHB"
-\i (00:00:54) color -globvis off 
-\i (00:00:55) color -vis 'BOARD GEOMETRY/DESIGN_OUTLINE' 
-\i (00:00:55) color -vis 'DRC ERROR CLASS/BOTTOM' 
-\i (00:00:55) color -vis ETCH/BOTTOM 
-\i (00:00:55) color -vis PIN/BOTTOM 
-\i (00:00:55) color -vis 'VIA CLASS/BOTTOM' 
-\i (00:00:55) color -vis 'ANTI ETCH/BOTTOM' 
-\i (00:00:55) color -vis BOUNDARY/BOTTOM 
-\i (00:00:55) color -vis CAVITY/BOTTOM 
-\i (00:00:55) trapsize 3120
-\i (00:00:55) generaledit 
-\i (00:01:05) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "File: SILKSCREENT"
-\i (00:01:05) color -globvis off 
-\i (00:01:05) color -vis 'BOARD GEOMETRY/DESIGN_OUTLINE' 
-\i (00:01:05) color -vis 'BOARD GEOMETRY/SILKSCREEN_TOP' 
-\i (00:01:05) color -vis 'COMPONENT VALUE/SILKSCREEN_TOP' 
-\i (00:01:05) color -vis 'DEVICE TYPE/SILKSCREEN_TOP' 
-\i (00:01:05) color -vis 'PACKAGE GEOMETRY/SILKSCRE
+\i (00:00:38) drag_start grid 192.2518 196.1637
+\i (00:00:38) move 
+\t (00:00:38) last pick:  191.0000 196.1000
+\t (00:00:38) Pick new location for the element(s).
+\i (00:00:41) drag_stop grid 188.8822 203.1524
+\i (00:00:41) generaledit 
+\i (00:00:43) pick grid 190.3174 185.2439
+\t (00:00:43) last pick:  190.3000 185.2500
+\i (00:00:43) prepopup 190.3174 185.2439
+\i (00:00:49) pop dyn_option_select @:@Spin 
+\i (00:00:49) spin 
+\i (00:00:51) iangle 180.000
+\t (00:00:51) last angle:  0.000 Degrees
+\i (00:00:51) generaledit 
+\i (00:00:51) drag_start grid 192.6886 186.1799
+\i (00:00:51) move 
+\t (00:00:51) last pick:  191.0000 186.1000
+\t (00:00:51) Pick new location for the element(s).
+\i (00:00:53) drag_stop grid 189.0070 193.3558
+\i (00:00:53) generaledit 
+\i (00:00:57) pick grid 180.9575 197.7861
+\t (00:00:57) last pick:  180.9500 197.8000
+\i (00:00:57) prepopup 180.9575 197.7861
+\i (00:01:01) pop dyn_option_select @:@Spin 
+\i (00:01:01) spin 
+\i (00:01:03) iangle 90.000
+\t (00:01:03) last angle:  0.000 Degrees
+\i (00:01:03) generaledit 
+\i (00:01:04) drag_start grid 184.0151 198.9093
+\i (00:01:04) move 
+\t (00:01:04) last pick:  181.0350 198.8300
+\t (00:01:04) Pick new location for the element(s).
+\i (00:01:07) drag_stop grid 171.6601 197.5365
+\i (00:01:07) generaledit 
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 212.7811 184.1207
+\t (00:01:14) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:01:14) trapsize 6240
+\i (00:01:17) zoom in 1 
+\i (00:01:17) setwindow pcb
+\i (00:01:17) zoom in 265.5707 202.0916
+\t (00:01:17) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:01:17) trapsize 3120
+\i (00:01:17) zoom in 1 
+\i (00:01:17) setwindow pcb
+\i (00:01:17) zoom in 265.5707 202.0917
+\t (00:01:17) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
+\i (00:01:17) trapsize 1560
+\i (00:01:18) zoom out 1 
+\i (00:01:18) setwindow pcb
+\i (00:01:18) zoom out 267.8171 199.8766
+\t (00:01:18) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:01:18) trapsize 3120
+\i (00:01:23) zoom out 1 
+\i (00:01:23) setwindow pcb
+\i (00:01:23) zoom out 232.8735 217.4107
+\t (00:01:23) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:01:23) trapsize 6240
+\i (00:01:26) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in 203.6707 187.4591
+\t (00:01:26) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:01:26) trapsize 3120
+\i (00:01:26) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in 203.6707 187.4591
+\t (00:01:26) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
+\i (00:01:26) trapsize 1560
+\i (00:01:27) zoom in 1 
+\i (00:01:27) setwindow pcb
+\i (00:01:27) zoom in 203.6707 187.4591
+\t (00:01:27) Grids are drawn 0.1000, 0.1000 apart for enhanced viewing.
+\i (00:01:27) trapsize 780
+\i (00:01:29) zoom out 1 
+\i (00:01:29) setwindow pcb
+\i (00:01:29) zoom out 203.6707 187.4591
+\t (00:01:29) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
+\i (00:01:29) trapsize 1560
+\i (00:01:30) zoom out 1 
+\i (00:01:30) setwindow pcb
+\i (00:01:30) zoom out 203.6708 187.4591
+\t (00:01:30) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:01:30) trapsize 3120
+\i (00:01:32) zoom in 1 
+\i (00:01:32) setwindow pcb
+\i (00:01:32) zoom in 203.6708 187.4592
+\t (00:01:32) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
+\i (00:01:32) trapsize 1560
+\i (00:01:32) zoom in 1 
+\i (00:01:32) setwindow pcb
+\i (00:01:32) zoom in 203.6708 187.4592
+\t (00:01:32) Grids are drawn 0.1000, 0.1000 apart for enhanced viewing.
+\i (00:01:32) trapsize 780
+\i (00:01:33) zoom out 1 
+\i (00:01:33) setwindow pcb
+\i (00:01:33) zoom out 203.6708 187.4592
+\t (00:01:33) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
+\i (00:01:33) trapsize 1560
+\i (00:01:33) zoom out 1 
+\i (00:01:33) setwindow pcb
+\i (00:01:33) zoom out 203.6397 187.4280
+\t (00:01:33) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:01:33) trapsize 3120
+\i (00:01:34) zoom out 1 
+\i (00:01:34) setwindow pcb
+\i (00:01:34) zoom out 203.6397 187.3657
+\t (00:01:34) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:01:34) trapsize 6240
+\i (00:01:35) save 
+\i (00:01:36) fillin yes 
+\i (00:01:36) generaledit 
+\i (00:01:42) dbdoctor 
+\i (00:01:43) setwindow form.dbdoctor_allegro
+\i (00:01:43) FORM dbdoctor_allegro shapes YES 
+\i (00:01:43) FORM dbdoctor_allegro drc YES 
+\i (00:01:44) FORM dbdoctor_allegro execute  
+\t (00:01:44) Dbdoctor in progress - wait...
+\t (00:01:44) Checking db records
+\t (00:01:44)     checking for orphans...
+\t (00:01:44)     Checked 100 percent
+\t (00:01:44) Regenerating DRC
+\t (00:01:44)   Original DRC errors: 0
+\t (00:01:44) Performing DRC...
+\t (00:01:44) Multithreaded DRC update (8 threads).
+\t (00:01:45) No DRC errors detected.
+\t (00:01:45)   Updated DRC errors:  0
+\t (00:01:45) Done dbdoctor.
+\t (00:01:45) Dbdoctor completed.
+\i (00:01:47) FORM dbdoctor_allegro close  
+\i (00:01:47) setwindow pcb
+\i (00:01:47) generaledit 
+\i (00:01:54) status 
+\i (00:01:54) generaledit 
+\i (00:01:57) setwindow form.status
+\i (00:01:57) FORM status done  
+\i (00:02:01) setwindow pcb
+\i (00:02:01) artwork 
+\i (00:02:03) setwindow form.film_control
+\i (00:02:03) FORM film_control cancel  
+\i (00:02:03) setwindow pcb
+\i (00:02:03) generaledit 
+\i (00:02:04) nctape_full 
+\i (00:02:06) setwindow form.nc_drill
+\i (00:02:06) FORM nc_drill execute  
+\w (00:02:06) WARNING(SPMHMF-269): Design contains slot holes that cannot be drilled. They can be processed by NC Route instead.
+\t (00:02:06) Starting Generating NC Drill...
+\i (00:02:09) FORM nc_drill close  
+\i (00:02:09) setwindow pcb
+\i (00:02:09) generaledit 
+\i (00:02:11) ncroute 
+\i (00:02:12) setwindow form.nc_route
+\i (00:02:12) FORM nc_route execute  
+\t (00:02:12) Starting NC Route...
+\i (00:02:14) FORM nc_route close  
+\i (00:02:14) setwindow pcb
+\i (00:02:14) generaledit 
+\i (00:02:18) artwork 
+\i (00:02:19) setwindow form.film_control
+\i (00:02:19) FORM film_control select_all  
+\i (00:02:23) FORM film_control create  
+\t (00:02:23) Checking db records
+\t (00:02:23)     checking for orphans...
+\t (00:02:23)     Checked 100 percent
+\t (00:02:23) Done dbdoctor.
+\t (00:02:23) Starting Create artwork films...
+\w (00:02:23) WARNING(SPMHGE-269): artwork had warnings, use Viewlog to review the log file.
+\w (00:02:24) Artwork generated with warnings.
+\i (00:04:13) setwindow pcb
+\i (00:04:13) setwindow text
+\i (00:04:13) close
+\i (00:04:15) setwindow form.film_control
+\i (00:04:15) FORM film_control ok  
+\i (00:04:15) setwindow pcb
+\i (00:04:15) generaledit 
+\i (00:04:17) save 
+\i (00:04:18) fillin yes 
+   (00:04:18) Loading signal.cxt 
+\i (00:04:18) generaledit 
+\i (00:10:31) exit 
+\t (00:10:31)     Journal end - Thu Feb 24 11:27:09 2022

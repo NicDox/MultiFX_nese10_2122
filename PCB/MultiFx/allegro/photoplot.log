@@ -4,15 +4,10 @@
 (                                                                     )
 (    Drawing          : MULTIFX.brd                                   )
 (    Software Version : 17.2S078                                      )
-(    Date/Time        : Sun Feb 20 19:45:28 2022                      )
+(    Date/Time        : Thu Feb 24 11:19:01 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
-
-
- ******************************************
- WARNING: DRC OUT OF DATE on this layout.
- ******************************************
 
  ---- Photoplot outline rectangle not found; using drawing extents.
 
@@ -82,7 +77,7 @@ Results from parameter file ...
   RECTANGLE  3.00000     x 1.80000      90.000 NO     DARK 
   OBLONG     3.00000     x 1.80000      90.000 NO     DARK 
 
-     TOP created with warnings
+     TOP created.
 
 
 ================================================================
@@ -122,7 +117,7 @@ Results from parameter file ...
   RECTANGLE  3.00000     x 1.80000      90.000 NO     DARK 
   OBLONG     3.00000     x 1.80000      90.000 NO     DARK 
 
-     BOTTOM created with warnings
+     BOTTOM created.
 
 
 ================================================================
@@ -171,7 +166,7 @@ Results from parameter file ...
   RECTANGLE  3.00000     x 1.80000      90.000 NO     DARK 
   OBLONG     3.00000     x 1.80000      90.000 NO     DARK 
 
-     SOLDERMASK_TOP created with warnings
+     SOLDERMASK_TOP created.
 
 
 ================================================================
@@ -199,7 +194,7 @@ Results from parameter file ...
   CIRCLE     0.10000                                  DARK 
   CIRCLE     0.60000                                  DARK 
 
-     SOLDERMASK_BOTTOM created with warnings
+     SOLDERMASK_BOTTOM created.
 
 
 ================================================================
@@ -218,7 +213,7 @@ Results from parameter file ...
   Suppress unconnected internal pads  NO
   Draw holes only                     NO
 
-    WARNING: text composed 0 width line found at (176.4500 197.2500)
+    WARNING: text composed 0 width line found at (171.6500 197.5500)
            ... using undefined line width of 0.1000
 
     WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
@@ -259,7 +254,7 @@ Results from parameter file ...
   ---------------------------------------------------------
   CIRCLE     0.10000                                  DARK 
 
-     SILKSCREEN_BOTTOM created with warnings
+     SILKSCREEN_BOTTOM created.
 
 
 ================================================================
@@ -286,7 +281,7 @@ Results from parameter file ...
   ---------------------------------------------------------
   CIRCLE     0.10000                                  DARK 
 
-     ASSEMBLY_TOP created with warnings
+     ASSEMBLY_TOP created.
 
 
 ================================================================
@@ -313,7 +308,7 @@ Results from parameter file ...
   ---------------------------------------------------------
   CIRCLE     0.10000                                  DARK 
 
-     ASSEMBLY_BOTTOM created with warnings
+     ASSEMBLY_BOTTOM created.
 
 
 ================================================================
@@ -351,7 +346,7 @@ Results from parameter file ...
   RECTANGLE  2.15000     x 4.15000       0.000 NO     DARK 
   RECTANGLE  2.15000     x 4.15000      90.000 NO     DARK 
 
-     PASTEMASK_TOP created with warnings
+     PASTEMASK_TOP created.
 
 
 ================================================================
@@ -386,7 +381,7 @@ Results from parameter file ...
   RECTANGLE  2.95000     x 1.75000      90.000 NO     DARK 
   OBLONG     2.95000     x 1.75000      90.000 NO     DARK 
 
-     PASTEMASK_BOTTOM created with warnings
+     PASTEMASK_BOTTOM created.
 
 
 ================================================================
@@ -413,21 +408,21 @@ Results from parameter file ...
   ---------------------------------------------------------
   CIRCLE     0.10000                                  DARK 
 
-     OUTLINE created with warnings
+     OUTLINE created.
 
 
 ------------------------------------------------------
  SUMMARY:
-        TOP created with warnings
-        BOTTOM created with warnings
-        SOLDERMASK_TOP created with warnings
-        SOLDERMASK_BOTTOM created with warnings
+        TOP created.
+        BOTTOM created.
+        SOLDERMASK_TOP created.
+        SOLDERMASK_BOTTOM created.
         SILKSCREEN_TOP created with warnings
-        SILKSCREEN_BOTTOM created with warnings
-        ASSEMBLY_TOP created with warnings
-        ASSEMBLY_BOTTOM created with warnings
-        PASTEMASK_TOP created with warnings
-        PASTEMASK_BOTTOM created with warnings
-        OUTLINE created with warnings
+        SILKSCREEN_BOTTOM created.
+        ASSEMBLY_TOP created.
+        ASSEMBLY_BOTTOM created.
+        PASTEMASK_TOP created.
+        PASTEMASK_BOTTOM created.
+        OUTLINE created.
 
  ARTWORK had warnings

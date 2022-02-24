@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : MULTIFX.brd                                   )
 (    Software Version : 17.2S078                                      )
-(    Date/Time        : Sun Feb 20 18:40:48 2022                      )
+(    Date/Time        : Tue Feb 22 22:59:37 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -50,8 +50,8 @@
          0.3000  P        T01            0.000000     0.000000
          1.2000  P        T02            0.000000     0.000000
          1.8500  P        T03            0.000000     0.000000
-         5.0000  P        T04            0.000000     0.000000
-         2.2000  N        T05            0.000000     0.000000
+         2.2000  N        T04            0.000000     0.000000
+         5.0000  N        T05            0.000000     0.000000
 
 
  Drill files being output to directory 'C:/temp/MultiFx/allegro' ...
@@ -66,11 +66,10 @@
      T01    1.   0.3000    0.0000/  0.0000      PLATED         22
      T02    2.   1.2000    0.0000/  0.0000      PLATED          6
      T03    3.   1.8500    0.0000/  0.0000      PLATED          3
-     T04    4.   5.0000    0.0000/  0.0000      PLATED          4
 
-     ---- Total holes:                                         35
+     ---- Total holes:                                         31
 
-     ---- Total head travel:              3.38 feet (1.03 meters)
+     ---- Total head travel:              2.62 feet (0.80 meters)
 
 
 
@@ -80,9 +79,10 @@
 
      Tool  Num     Size      +/- Tolerance     Plating   Quantity
 
-     T05    1.   2.2000    0.0000/  0.0000  NON_PLATED          1
+     T04    1.   2.2000    0.0000/  0.0000  NON_PLATED          1
+     T05    2.   5.0000    0.0000/  0.0000  NON_PLATED          4
 
-     ---- Total holes:                                          1
+     ---- Total holes:                                          5
 
-     ---- Total head travel:              0.00 feet (0.00 meters)
+     ---- Total head travel:              0.74 feet (0.23 meters)
 

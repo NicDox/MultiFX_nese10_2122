@@ -4,10 +4,15 @@
 (                                                                     )
 (    Drawing          : MULTIFX.brd                                   )
 (    Software Version : 17.2S078                                      )
-(    Date/Time        : Sun Feb 20 19:21:48 2022                      )
+(    Date/Time        : Sun Feb 20 19:45:28 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
+
+
+ ******************************************
+ WARNING: DRC OUT OF DATE on this layout.
+ ******************************************
 
  ---- Photoplot outline rectangle not found; using drawing extents.
 
@@ -77,7 +82,7 @@ Results from parameter file ...
   RECTANGLE  3.00000     x 1.80000      90.000 NO     DARK 
   OBLONG     3.00000     x 1.80000      90.000 NO     DARK 
 
-     TOP created.
+     TOP created with warnings
 
 
 ================================================================
@@ -103,7 +108,6 @@ Results from parameter file ...
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
   CIRCLE     0.10000                                  DARK 
-  CIRCLE     0.12700                                  DARK 
   CIRCLE     0.15000                                  DARK 
   CIRCLE     0.60000                                  DARK 
   CIRCLE     1.80000                                  DARK 
@@ -118,7 +122,7 @@ Results from parameter file ...
   RECTANGLE  3.00000     x 1.80000      90.000 NO     DARK 
   OBLONG     3.00000     x 1.80000      90.000 NO     DARK 
 
-     BOTTOM created.
+     BOTTOM created with warnings
 
 
 ================================================================
@@ -167,7 +171,7 @@ Results from parameter file ...
   RECTANGLE  3.00000     x 1.80000      90.000 NO     DARK 
   OBLONG     3.00000     x 1.80000      90.000 NO     DARK 
 
-     SOLDERMASK_TOP created.
+     SOLDERMASK_TOP created with warnings
 
 
 ================================================================
@@ -195,7 +199,7 @@ Results from parameter file ...
   CIRCLE     0.10000                                  DARK 
   CIRCLE     0.60000                                  DARK 
 
-     SOLDERMASK_BOTTOM created.
+     SOLDERMASK_BOTTOM created with warnings
 
 
 ================================================================
@@ -255,7 +259,7 @@ Results from parameter file ...
   ---------------------------------------------------------
   CIRCLE     0.10000                                  DARK 
 
-     SILKSCREEN_BOTTOM created.
+     SILKSCREEN_BOTTOM created with warnings
 
 
 ================================================================
@@ -282,7 +286,7 @@ Results from parameter file ...
   ---------------------------------------------------------
   CIRCLE     0.10000                                  DARK 
 
-     ASSEMBLY_TOP created.
+     ASSEMBLY_TOP created with warnings
 
 
 ================================================================
@@ -309,7 +313,7 @@ Results from parameter file ...
   ---------------------------------------------------------
   CIRCLE     0.10000                                  DARK 
 
-     ASSEMBLY_BOTTOM created.
+     ASSEMBLY_BOTTOM created with warnings
 
 
 ================================================================
@@ -347,7 +351,7 @@ Results from parameter file ...
   RECTANGLE  2.15000     x 4.15000       0.000 NO     DARK 
   RECTANGLE  2.15000     x 4.15000      90.000 NO     DARK 
 
-     PASTEMASK_TOP created.
+     PASTEMASK_TOP created with warnings
 
 
 ================================================================
@@ -382,7 +386,7 @@ Results from parameter file ...
   RECTANGLE  2.95000     x 1.75000      90.000 NO     DARK 
   OBLONG     2.95000     x 1.75000      90.000 NO     DARK 
 
-     PASTEMASK_BOTTOM created.
+     PASTEMASK_BOTTOM created with warnings
 
 
 ================================================================
@@ -409,21 +413,21 @@ Results from parameter file ...
   ---------------------------------------------------------
   CIRCLE     0.10000                                  DARK 
 
-     OUTLINE created.
+     OUTLINE created with warnings
 
 
 ------------------------------------------------------
  SUMMARY:
-        TOP created.
-        BOTTOM created.
-        SOLDERMASK_TOP created.
-        SOLDERMASK_BOTTOM created.
+        TOP created with warnings
+        BOTTOM created with warnings
+        SOLDERMASK_TOP created with warnings
+        SOLDERMASK_BOTTOM created with warnings
         SILKSCREEN_TOP created with warnings
-        SILKSCREEN_BOTTOM created.
-        ASSEMBLY_TOP created.
-        ASSEMBLY_BOTTOM created.
-        PASTEMASK_TOP created.
-        PASTEMASK_BOTTOM created.
-        OUTLINE created.
+        SILKSCREEN_BOTTOM created with warnings
+        ASSEMBLY_TOP created with warnings
+        ASSEMBLY_BOTTOM created with warnings
+        PASTEMASK_TOP created with warnings
+        PASTEMASK_BOTTOM created with warnings
+        OUTLINE created with warnings
 
  ARTWORK had warnings
