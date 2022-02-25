@@ -19,23 +19,22 @@ static DaisySeed hw;
 static Phaser										phas;
 static DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS 	del;
 static Tremolo										trem;
-static Parameter 									deltime;
 
 static OledDisp display;
 
-float phas_LFO_freq = 2, phas_LFO_depth = 0.4;
-float trem_LFO_freq = 2, trem_LFO_depth = 0.4,  dryWet = 0.5;
+float phas_LFO_freq = 2, phas_LFO_depth = 0.4; //Phaser variables
+float trem_LFO_freq = 2, trem_LFO_depth = 0.4; //Tremolo variables
+float deltime = 0.75f * hw.AudioSampleRate(), currentDelay, feedback = 0.5; //Delay variables
+float dryWet = 0.5;
 float global_volume = 0.5;
 int currentEffect = 0;
 bool effectOn[NUM_OF_EFFECTS] = {true, false, false}; //Turn ON Delay initially
 bool BP_On = 0;
 
-enum FX_types {//CAMBIA ORDINE
+enum FX_types {
 	DEL,		//0
 	TREM,		//1	
 	PHAS,		//2
-	// DRY,
-	// ALL,
 };
 
 
@@ -44,7 +43,7 @@ enum FX_types {//CAMBIA ORDINE
 void init_MultiFx();
 void init_display();
 void read_volume();
-void read_percentageFx();
+void read_parameterFx();
 void UpdateLeds(dsy_gpio led_pin);
 void updateDisplay();
 
@@ -69,7 +68,7 @@ void AudioCallback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, s
 {
 	read_volume(); 	//Each time a new audio buffer is to be processed, 
 						//we check state of controls.
-	read_percentageFx();
+	read_parameterFx();
 
 	for (size_t i = 0; i < size; i++) //Cycle each sample contained inside buffer
 	{
@@ -121,6 +120,9 @@ int main(void)
 	
 
 	//Set params
+	currentDelay = deltime = sr * 0.75f;
+	del.SetDelay(currentDelay);
+
 	phas.SetLfoFreq(phas_LFO_freq);
 	phas.SetLfoDepth(phas_LFO_depth);
 
@@ -132,25 +134,38 @@ int main(void)
 	hw.StartAudio(AudioCallback);
 	
 	while(1) {
+		bool BP_butt_stop = false, NEXT_butt_stop = false, BACK_butt_stop = false;
 		updateDisplay();
         //Debounce the button
         button_BP.Debounce();
         //If the button is pressed, turn the LED on
-        if (button_BP.Pressed()){
+        if (button_BP.Pressed() && !BP_butt_stop){
 			bypass();
 			UpdateLeds(led_BP);
+			BP_butt_stop = true;
+		}
+		if (!button_BP.Pressed()){
+			BP_butt_stop = false;
 		}
         
 		button_SW_NEXT.Debounce();
         //If the button is pressed, turn the LED on
-        if (button_SW_NEXT.Pressed()){
+        if (button_SW_NEXT.Pressed() && !NEXT_butt_stop){
 			nextFx();
+			NEXT_butt_stop = true;
 		}
+		if (!button_SW_NEXT.Pressed()){
+			NEXT_butt_stop = false;
+		}		
 
 		button_SW_BACK.Debounce();
-		if (button_SW_BACK.Pressed()){
+		if (button_SW_BACK.Pressed() && !BACK_butt_stop){
 			backFx();
+			BACK_butt_stop = true;
 		}
+		if (!button_SW_BACK.Pressed()){
+			BACK_butt_stop = false;
+		}	
 
 		System::Delay(5);
 
@@ -189,9 +204,12 @@ void read_volume(){
 
 }
 
-void read_percentageFx(){
-	trem_LFO_freq = hw.adc.GetFloat(1);
-	phas_LFO_freq = trem_LFO_freq;
+void read_parameterFx(){
+	float parameter_1 = hw.adc.GetFloat(1);
+	deltime = hw.AudioSampleRate() * 0.75f * parameter_1;
+
+	trem_LFO_freq = parameter_1 * 20; //LFO rate should be in subaudio frequencies
+	phas_LFO_freq = parameter_1 * 20;
 	trem.SetFreq(trem_LFO_freq);
 	phas.SetLfoFreq(phas_LFO_freq);
 }
@@ -247,7 +265,12 @@ void GetPhaserSamples(float &in){
 }
 //GetDelaySample
 void GetDelaySamples(float &in){
-	in = del.Read();
+	fonepole(currentDelay, deltime, .00007f);
+	del.SetDelay(currentDelay);
+	float outD = del.Read();
+
+	del.Write((feedback * outD) + in);
+	in = (feedback * outD) + ((1.0f - feedback) * in);
 }
 
 //GetTremoloSample
